@@ -36,7 +36,7 @@ figure {
 
 /* colors */
 .bg-dark {
-  background-color: #1f2937;
+  background-color: #84a59d;
 }
 .bg-medium {
   background-color: #e5e7eb;
@@ -100,6 +100,7 @@ section {
   margin: 0 auto;
   padding: 0 2em;
   padding-top: 1em;
+  padding-bottom: 0.5em;
 }
 @media (max-width: 715px) {
   .container-nav {
@@ -131,7 +132,7 @@ nav li {
 /* intro section */
 
 .section-intro {
-  background-color: #1f2937;
+  background-color: #84a59d;
   color: #fff;
   padding-top: 5em;
 }
@@ -191,7 +192,7 @@ h2 span {
 button {
   font-size: 18px;
   border: none;
-  background-color: #3882f6;
+  background-color: #277da1;
   color: #fff;
   width: max-content;
   border-radius: 10px;
@@ -202,12 +203,17 @@ button:hover,
 button:focus {
   background-color: #67b0f5;
 }
-/* product features section */
+/* special features section */
 
 .section-title {
   color: #1f2937;
   text-align: center;
   margin: 1em 0;
+}
+.subheader {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: -20px;
 }
 .product-features {
   text-align: center;
@@ -273,13 +279,46 @@ button:focus {
     max-width: 80vw;
   }
 }
+/* featured products section */
+
+.product-link:hover,
+.product-link:focus {
+  opacity: 0.8;
+}
+.product-thumbnail {
+  width: 250px;
+  height: 200px;
+}
+.product-post-thumb {
+  width: 250px;
+  height: 100px;
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.product-thumbnail-voice {
+  background-color: goldenrod;
+}
+.product-thumbnail-instrument {
+  background-color: #f28482;
+}
+.product-thumbnail-online {
+  background-color: #588157;
+}
+.product-thumbnail-adult {
+  background-color: #9e2a2b;
+}
 /* special call to action section */
 .section-promotion {
   padding: 4em 0;
 }
 .container-signup {
   max-width: 800px;
-  background-color: #3882f6;
+  background-color: #84a59d;
   color: #fff;
   padding: 2em 5em;
   border-radius: 10px;
@@ -293,6 +332,7 @@ button:focus {
   font-weight: 500;
   padding: 5px 25px;
   border-radius: 10px;
+  background-color: #277da1;
 }
 .btn-signup:hover,
 .btn-signup:focus {
