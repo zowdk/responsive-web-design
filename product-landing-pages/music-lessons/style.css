@@ -83,11 +83,20 @@ header {
 /* navigation */
 .nav-bar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   max-width: 80vw;
   margin: 0 auto;
   padding: 0 2em;
   padding-top: 0.5em;
+}
+@media (max-width: 715px) {
+  .container-nav {
+    flex-direction: column;
+  }
+  header {
+    text-align: center;
+  }
 }
 .nav-list,
 nav ul {
@@ -99,4 +108,11 @@ nav ul {
 nav li {
   padding: 0 2em;
   letter-spacing: 0.5px;
+}
+@media (max-width: 550px) {
+  .nav-list,
+  nav li {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+  }
 }
