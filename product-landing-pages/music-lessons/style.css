@@ -99,7 +99,7 @@ section {
   max-width: 80vw;
   margin: 0 auto;
   padding: 0 2em;
-  padding-top: 0.5em;
+  padding-top: 1em;
 }
 @media (max-width: 715px) {
   .container-nav {
@@ -167,6 +167,26 @@ h2 span {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1150px) {
+  .container-intro {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: -4.5em;
+  }
+  .container-hero {
+    width: 90%;
+  }
+  .hero-secondary {
+    margin: 0 auto;
+    margin-top: 0.75em;
+  }
+  /* TODO: shrink the .intro-container size or hero-img content */
+  .container-hero-img {
+    margin-top: 2em;
+    width: 70%;
+  }
+}
 /* button */
 button {
   font-size: 18px;
@@ -209,6 +229,22 @@ button:focus {
   color: #1f2937;
   font-weight: 200;
 }
+@media (max-width: 850px) {
+  .product-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    max-width: 80vw;
+  }
+  .feature-item {
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 600px) {
+  .product-features {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* testimonial section */
 
@@ -231,6 +267,11 @@ button:focus {
   font-size: 18px;
   font-weight: 900;
   letter-spacing: 0.5px;
+}
+@media (max-width: 800px) {
+  .container-quote {
+    max-width: 80vw;
+  }
 }
 /* special call to action section */
 .section-promotion {
@@ -257,6 +298,11 @@ button:focus {
 .btn-signup:focus {
   background-color: #67b0f5;
 }
+@media (max-width: 900px) {
+  .container-signup {
+    max-width: 90vw;
+  }
+}
 /* footer */
 footer {
   background-color: #1f2937;
@@ -269,3 +315,4 @@ footer {
 footer .container {
   width: 800px;
 }
+/* TODO: make media queries more uniform. no random browser widths */
