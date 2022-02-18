@@ -103,6 +103,7 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
+  color: #e5e7eb;
 }
 .nav-list-item,
 nav li {
