@@ -44,10 +44,11 @@ figure {
 .bg-light {
   background-color: #fff;
 }
-.btn {
-  color: #3882f6;
-}
+
 /* typography */
+h1 h2 h3 {
+  font-size: 24px;
+}
 .hero-primary {
   font-size: 48px;
   font-weight: 900;
@@ -229,4 +230,29 @@ button:focus {
   font-size: 18px;
   font-weight: 900;
   letter-spacing: 0.5px;
+}
+/* special call to action section */
+.section-promotion {
+  padding: 4em 0;
+}
+.container-signup {
+  max-width: 800px;
+  background-color: #3882f6;
+  color: #fff;
+  padding: 2em 5em;
+  border-radius: 10px;
+}
+.container-signup p {
+  font-weight: 200;
+  font-size: 16px;
+}
+.btn-signup {
+  border: 1px solid #fff;
+  font-weight: 500;
+  padding: 5px 25px;
+  border-radius: 10px;
+}
+.btn-signup:hover,
+.btn-signup:focus {
+  background-color: #67b0f5;
 }
