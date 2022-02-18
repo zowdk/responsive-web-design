@@ -8,8 +8,9 @@
 
 /* set up the body */
 body {
-  line-height: 1.5;
+  line-height: 1.2;
   min-height: 100vh;
+  font-family: sans-serif;
 }
 
 /* make image easier to deal with */
@@ -51,8 +52,13 @@ figure {
   font-size: 48px;
   font-weight: 900;
 }
+span {
+  display: block;
+}
 .hero-secondary {
   font-size: 18px;
+  font-weight: 200;
+  max-width: 45ch;
 }
 .logo {
   font-size: 24px;
@@ -79,6 +85,10 @@ a {
 header {
   background-color: #1f2937;
   color: #fff;
+}
+section {
+  padding: 1em;
+  padding-bottom: 5em;
 }
 /* navigation */
 .nav-bar {
@@ -116,4 +126,58 @@ nav li {
     flex-direction: column;
     margin-bottom: 0.5em;
   }
+}
+/* intro section */
+
+.intro {
+  background-color: #1f2937;
+  color: #fff;
+  padding-top: 5em;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  border: solid goldenrod 2px;
+}
+.container-hero {
+  border: solid red 2px;
+  padding: 0 0.5em;
+  align-items: center;
+  margin-right: 2em;
+}
+h2 span {
+  display: block;
+}
+/* TODO: Stop img expanding past grandparent  */
+.container-hero-img {
+  max-width: 100%;
+}
+.hero-img {
+  background-color: #e5e7eb;
+  width: 500px;
+  max-width: 100%;
+  aspect-ratio: 5/3;
+  display: block;
+  border: solid green 2px;
+}
+.hero-img p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* button */
+button {
+  font-size: 18px;
+  border: none;
+  background-color: #3882f6;
+  color: #fff;
+  width: max-content;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin: 1em 0;
+}
+button:hover,
+button:focus {
+  background-color: #67b0f5;
 }
