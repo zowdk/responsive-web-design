@@ -1,0 +1,70 @@
+/* resets */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* make image easier to deal with */
+img,
+figure {
+  display: block;
+  max-width: 100%;
+}
+
+/* ulility classes */
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80vw;
+}
+
+/* colors */
+.bg-dark {
+  background-color: #1f2937;
+}
+.bg-medium {
+  background-color: #e5e7eb;
+}
+.bg-light {
+  background-color: #fff;
+}
+.btn {
+  color: #3882f6;
+}
+/* typography */
+.hero-primary {
+  font-size: 48px;
+  font-weight: 900;
+}
+.hero-secondary {
+  font-size: 18px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 900;
+}
+.quote-primary {
+  font-size: 36px;
+  font-weight: 200;
+  font-style: italic;
+}
