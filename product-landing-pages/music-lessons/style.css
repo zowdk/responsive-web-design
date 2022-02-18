@@ -256,3 +256,15 @@ button:focus {
 .btn-signup:focus {
   background-color: #67b0f5;
 }
+/* footer */
+footer {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1.5em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .container {
+  width: 800px;
+}
