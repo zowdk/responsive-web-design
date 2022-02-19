@@ -53,8 +53,8 @@ h1 h2 h3 {
   font-size: 48px;
   font-weight: 900;
 }
-span {
-  display: block;
+.section-products span {
+  color: goldenrod;
 }
 .hero-secondary {
   font-size: 18px;
@@ -149,7 +149,7 @@ nav li {
   align-items: center;
   margin-right: 1em;
 }
-h2 span {
+.hero-primary span {
   display: block;
 }
 
