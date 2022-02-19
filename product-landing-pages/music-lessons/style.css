@@ -315,6 +315,16 @@ button:focus {
 .product-thumbnail-adult {
   background-color: #9e2a2b;
 }
+@media (max-width: 1150px) {
+  .container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .product-link {
+    margin-bottom: 2em;
+  }
+}
 /* special call to action section */
 .section-promotion {
   padding: 4em 0;
