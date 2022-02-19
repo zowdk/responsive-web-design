@@ -217,16 +217,16 @@ button:focus {
 }
 .product-features {
   text-align: center;
-  max-width: 900px;
+  max-width: 90vw;
 }
 
 .feature-item {
   justify-content: center;
 }
 .section-about img {
-  border: #3882f6 4px solid;
+  border: #000 2px solid;
   height: 200px;
-  width: 200px;
+  width: auto;
   border-radius: 10px;
   margin: 0 auto;
   margin-bottom: 0.5em;
@@ -280,7 +280,9 @@ button:focus {
   }
 }
 /* featured products section */
-
+.container-products {
+  max-width: 90vw;
+}
 .product-link:hover,
 .product-link:focus {
   opacity: 0.8;
