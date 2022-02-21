@@ -169,10 +169,8 @@ nav li {
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
-  border: solid goldenrod 2px;
 }
 .container-hero {
-  border: solid red 2px;
   padding: 0 0.5em;
   align-items: center;
   margin-right: 1em;
@@ -189,7 +187,6 @@ nav li {
   width: 100%;
   aspect-ratio: 5/3;
   display: block;
-  border: solid green 2px;
 }
 .hero-img p {
   display: flex;
