@@ -4,5 +4,5 @@
 This repository contains my personal solutions to the responsive design projects as part of the Foundations course. </br></br>
 
 ## Projects 
-*Project Landing Page: [Page]() | [Requirements](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/landing-page#assignment)
+*Project Landing Page: [Page](https://zowdk.github.io/responsive-web-design/product-landing-pages/music-lessons/) | [Requirements](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/landing-page#assignment)
  
