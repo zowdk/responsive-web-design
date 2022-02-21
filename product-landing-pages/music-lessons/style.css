@@ -1,4 +1,6 @@
-/* resets */
+/******* 
+ resets
+ *******/
 
 * {
   margin: 0;
@@ -6,21 +8,30 @@
   box-sizing: border-box;
 }
 
-/* set up the body */
+/*******
+ set up the body 
+ *******/
+
 body {
   line-height: 1.2;
   min-height: 100vh;
   font-family: sans-serif;
 }
 
-/* make image easier to deal with */
+/*******
+ make image easier to deal with 
+ *******/
+
 img,
 figure {
   display: block;
   max-width: 100%;
 }
 
-/* ulility classes */
+/*******
+ ulility classes
+  *******/
+
 .flex {
   display: flex;
 }
@@ -34,7 +45,10 @@ figure {
   max-width: 80vw;
 }
 
-/* colors */
+/*******
+ colors 
+ *******/
+
 .bg-dark {
   background-color: #84a59d;
 }
@@ -45,7 +59,10 @@ figure {
   background-color: #fff;
 }
 
-/* typography */
+/*******
+ typography
+  *******/
+
 h1 h2 h3 {
   font-size: 24px;
 }
@@ -82,7 +99,10 @@ a {
   cursor: pointer;
 }
 
-/* layout */
+/*******
+ layout 
+ *******/
+
 header {
   background-color: #1f2937;
   color: #fff;
@@ -91,7 +111,10 @@ section {
   padding: 1em;
   padding-bottom: 5em;
 }
-/* navigation */
+/******
+ navigation 
+ *******/
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -132,7 +155,9 @@ nav li {
     margin-bottom: 0.5em;
   }
 }
-/* intro section */
+/*******
+ intro section 
+ ********/
 
 .section-intro {
   background-color: #84a59d;
@@ -192,7 +217,10 @@ nav li {
     width: 70%;
   }
 }
-/* button */
+/***
+button 
+***/
+
 button {
   font-size: 18px;
   border: none;
@@ -207,7 +235,9 @@ button:hover,
 button:focus {
   background-color: #67b0f5;
 }
-/* special features section */
+/**** 
+special features section 
+****/
 
 .section-title {
   color: #1f2937;
@@ -255,7 +285,9 @@ button:focus {
   }
 }
 
-/* testimonial section */
+/****
+ testimonial section
+  ****/
 
 .section-quote {
   background-color: #e5e7eb;
@@ -282,7 +314,10 @@ button:focus {
     max-width: 80vw;
   }
 }
-/* featured products section */
+/**** 
+featured products section
+ ****/
+
 .container-products {
   max-width: 90vw;
 }
@@ -327,7 +362,10 @@ button:focus {
     margin-bottom: 2em;
   }
 }
-/* special call to action section */
+/*****
+ special call to action section
+  *****/
+
 .section-promotion {
   padding: 4em 0;
 }
@@ -358,7 +396,10 @@ button:focus {
     max-width: 90vw;
   }
 }
-/* footer */
+/****
+ footer 
+ ****/
+
 footer {
   background-color: #1f2937;
   color: #fff;
