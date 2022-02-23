@@ -18,5 +18,5 @@ This repository contains my personal solutions to the responsive design projects
 * Personal Portfolio Page [Page] | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
 
 </br>
-</> with ✨
+< / > with ✨
 
