@@ -33,6 +33,10 @@ textarea {
   font-family: inherit;
   font-size: inherit;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 /* make images easier to deal with */
 img {
   width: 80%;
@@ -54,6 +58,7 @@ button {
   background-color: #fff;
   box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.3),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  border-radius: 0.5em;
 }
 @media (min-width: 575px) {
   .container {
@@ -77,6 +82,8 @@ button {
   padding: 4em 3em;
   display: flex;
   flex-direction: row;
+  border-radius: 0.5em;
+
   border: 2px solid red;
 }
 .description {
@@ -115,7 +122,6 @@ form
 ====*/
 form {
   padding: 0 2em;
-  border-radius: 0.5em;
   margin-bottom: 4em;
 }
 
@@ -171,4 +177,15 @@ button:focus {
   box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.3),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
   background-color: #3c6e71;
+}
+/* footer */
+footer {
+  background-color: #135058;
+  color: #fff;
+  text-align: right;
+  padding: 1.25em;
+  font-size: 2rem;
+}
+span {
+  color: goldenrod;
 }
