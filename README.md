@@ -11,6 +11,12 @@ This repository contains my personal solutions to the responsive design projects
 ## freeCodeCamp
 [freeCodeCamp](https://www.freecodecamp.org/) is a non-profit organization that helps people around the world learn to code for free. </br></br>
 
-* Survey form [Page](https://zowdk.github.io/responsive-web-design/survey-form/) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form/)
+* Tribute Page [Page] | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
+* Survey Form [Page](https://zowdk.github.io/responsive-web-design/survey-form/) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form/)
+* Product Landing Page [Page] | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
+* Technical Documentation Page [Page] | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
+* Personal Portfolio Page [Page] | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
 
+</br>
+</> with ✨
 
