@@ -1,0 +1,96 @@
+/* ==== 
+resets
+==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+/* setting up the body */
+body {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+
+  background: linear-gradient(to right, #f1f2b5 0%, #135058 100%);
+}
+
+/* typography */
+h1 {
+  font-size: 2.75rem;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+/* make images easier to deal with */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* button */
+button {
+  border: none;
+}
+
+/* layout */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2em;
+  background-color: #fff;
+}
+@media (min-width: 575px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+@media (min-width: 975px) {
+  .container {
+    max-width: 900px;
+  }
+}
+/* header */
+.header {
+  margin-bottom: 4.5em;
+  padding: 2em;
+  padding-top: 4em;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid red;
+}
+.description {
+  text-align: left;
+  margin-top: 2em;
+  border: 2px solid green;
+}
+.header-info {
+  border: 2px solid blue;
+  text-align: left;
+  width: 60%;
+}
+.header-image {
+  width: 40%;
+  border: 2px solid red;
+}
+.img-div {
+  height: 200px;
+  background-color: #135058;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
