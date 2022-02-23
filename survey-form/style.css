@@ -77,7 +77,7 @@ button {
 
 /* header */
 .header {
-  margin-bottom: 4.5em;
+  margin-bottom: 1em;
   padding: 4em 3em;
   display: flex;
   flex-direction: row;
@@ -116,6 +116,7 @@ form
 ====*/
 form {
   padding: 0 2em;
+  padding-bottom: 2em;
   margin-bottom: 4em;
 }
 
