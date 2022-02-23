@@ -43,7 +43,6 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
-  border: 3px solid blue;
 }
 /* button */
 button {
@@ -83,22 +82,17 @@ button {
   display: flex;
   flex-direction: row;
   border-radius: 0.5em;
-
-  border: 2px solid red;
 }
 .description {
   text-align: left;
   margin-top: 2em;
-  border: 2px solid green;
 }
 .header-info {
-  border: 2px solid blue;
   text-align: left;
   width: 60%;
 }
 .header-image {
   width: 40%;
-  border: 2px solid red;
 }
 .img-div {
   height: 200px;
