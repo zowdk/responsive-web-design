@@ -11,6 +11,6 @@ This repository contains my personal solutions to the responsive design projects
 ## freeCodeCamp
 [freeCodeCamp](https://www.freecodecamp.org/) is a non-profit organization that helps people around the world learn to code for free. </br></br>
 
-* Survey form [Page]() | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form/)
+* Survey form [Page](https://zowdk.github.io/responsive-web-design/survey-form/) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form/)
 
 
