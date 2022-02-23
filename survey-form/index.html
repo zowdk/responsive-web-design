@@ -12,8 +12,8 @@
       <!-- intro header -->
       <div class="header">
         <div class="header-info">
-          <h1 class="title">Danish Learning Survey</h1>
-          <p class="description">
+          <h1 id="title">Danish Learning Survey</h1>
+          <p id="description">
             We would like to hear about your experience with Danish Language
             courses. Thank you for taking a moment help us improve the learner
             experience.
@@ -51,8 +51,8 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="dropdown-experience" id="experience-level" >Experience Level</label>
-                    <select id="dropdown-experience" class="form-inputs" name="experience" required>
+                    <label for="dropdown" id="experience-level" >Experience Level</label>
+                    <select id="dropdown" class="form-inputs" name="experience" required>
                         <option disabled selected value>Select your level of experience</option>
                         <option value="beginner">Less than 1 year</option>
                         <option value="basic">1 to 2 years</option>
@@ -115,16 +115,16 @@
                     <p>What do you find most difficult? (Check all that apply.)</p>
 
                     <label>
-                        <input name="challenges" value="" type="checkbox"/>Hard to stay motivated
+                        <input name="challenges" value="motivation" type="checkbox"/>Hard to stay motivated
                     </label>
                     <label>
-                        <input name="challenges" value="" type="checkbox"/>Can't find fun ways to practice
+                        <input name="challenges" value="interest" type="checkbox"/>Can't find fun ways to practice
                     </label>
                     <label>
-                        <input name="challenges" value="" type="checkbox"/>Don't know any Danes to learn from
+                        <input name="challenges" value="practice" type="checkbox"/>Don't know any Danes to learn from
                     </label>
                     <label>
-                        <input name="challenges" value="" type="checkbox"/>Not getting enough feedback
+                        <input name="challenges" value="feedback" type="checkbox"/>Not getting enough feedback
                     </label>
                 </div>
 
@@ -186,5 +186,6 @@
     <footer>
         <p> <span> < / > </span> by <a href="https://twitter.com/zowdk">@zowdk</a></span></p>
     </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
