@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- intro header -->
+      <div class="header">
+        <div class="header-info">
+          <h1 class="title">Danish Learning Experience Survey</h1>
+          <p class="description">
+            We would like to hear about your experience with Danish Language
+            courses. Thank you for taking a moment help us improve the learner
+            experience.
+          </p>
+        </div>
+        <div class="header-image">
+          <!-- todo: add img, src, alt -->
+          <div class="img-div"></div>
+        </div>
+      </div>
+
+      <!-- survey form -->
+      <form id="survey-form">
+        <div class="input-headings">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Hej! Jeg hedder."
+                  class="form-inputs"
+                  required
+                  ></input>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" id="email-label">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="dit-navn@gmail.com" class="form-inputs" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age</label>
+                    <input id="number" placeholder="28" min="18" max="100" class="form-inputs" required></input>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dropdown-experience" id="experience-level" >Experience Level</label>
+                    <select id="dropdown-experience" class="form-inputs" name="experience" required>
+                        <option disabled selected value>Select your level of experience</option>
+                        <option value="beginner">Less than 1 year</option>
+                        <option value="basic">1 to 2 years</option>
+                        <option value="proficient">2 to five years</option>
+                        <option value="advanced">5+ years</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dropdown-work" id="work-status">Employment Status</label>
+                    <select id="dropdown-work" class="form-inputs" name="role" required>
+                        <option disabled selected value>Select your current status</option>
+                        <option value="student">Student</option>
+                        <option value="full-time">Working full-time</option>
+                        <option value="part-time">Working part-time</option>
+                        <option value="independent">Full-time independent study</option>
+                        <option value="retired">Retired</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>What are your current learning goals?</p>
+                    <label>
+                        <input name="learning-goal" value="modules" type="radio" class="input-radio" checked/>
+                        Complete the modules in DU1, 2 or 3
+                    </label>
+                    <label>
+                        <input name="learning-goal" value="confidence" type="radio" class="input-radio" />    
+                    Confidence when speaking to others
+                    </label> 
+                    <label>
+                        <input name="learning-goal" value="expressions" type="radio" class="input-radio" />    
+                    Know which expressions to use and when
+                    </label> 
+                    <label>
+                        <input name="learning-goal" value="pronunciation" type="radio" class="input-radio" />    
+                    Improve pronunciation, be understood by Danes
+                    </label> 
+                    <label>
+                        <input name="learning-goal" value="reading" type="radio" class="input-radio" />    
+                    Ability to understand any written text
+                    </label> 
+                    <label>
+                        <input name="learning-goal" value="humor" type="radio" class="input-radio" />    
+                    Be funny and have engaging interatctions
+                    </label> 
+                    <label>
+                        <input name="learning-goal" value="technical" type="radio" class="input-radio" />    
+                    Communicate effectively at a technical / professional level
+                    </label> 
+                    <label>
+                        <input name="learning-goal" value="writing" type="radio" class="input-radio" />    
+                    Write with few / no errors
+                    </label> 
+                    <label>
+                        <input name="learning-goal" value="family" type="radio" class="input-radio" />    
+                    Be with Danish family or friends without language being a barrier
+                    </label> 
+                </div>
+
+                <div class="form-group">
+                    <p>What do you find most difficult (Check all that apply)</p>
+
+                    <label>
+                        <input name="challenges" value="" type="checkbox"/>Hard to stay motivated
+                    </label>
+                    <label>
+                        <input name="challenges" value="" type="checkbox"/>Can't find fun ways to practice
+                    </label>
+                    <label>
+                        <input name="challenges" value="" type="checkbox"/>Don't know any Danes to learn from
+                    </label>
+                    <label>
+                        <input name="challenges" value="" type="checkbox"/>Not getting enough feedback
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>Overall, how would you rate your language course?</p>
+                    <label>
+                        <input name="user-value" value="excellent" type="radio" class="input-radio" checked/>
+                        Extremely useful
+                    </label>
+                    <label>
+                        <input name="user-value" value="very-good" type="radio" class="input-radio" />
+                        Very useful
+                    </label>
+                    <label>
+                        <input name="user-value" value="good" type="radio" class="input-radio"/>
+                        Somewhat useful
+                    </label>
+                    <label>
+                        <input name="user-value" value="fair" type="radio" class="input-radio" />
+                        Not so useful
+                    </label>
+                    <label>
+                        <input name="user-value" value="poor" type="radio" class="input-radio" />
+                        Not at all useful
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>Would you recommend your language course to a friend?</p>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>
+                        Definitely
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="radio" class="input-radio"/>
+                        Maybe
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>
+                        Not sure
+                    </label>
+                </div>
+
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
