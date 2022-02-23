@@ -92,9 +92,23 @@ button {
   height: 200px;
   background-color: #135058;
 }
+@media (max-width: 975px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-info {
+    width: 100%;
+  }
+  .header-image {
+    width: 350px;
+    margin-bottom: 1em;
+  }
+}
 /* ==== 
 form
- ====*/
+====*/
 
 label {
   display: flex;
