@@ -19,7 +19,7 @@ body {
   text-align: center;
   color: #000;
 
-  background: linear-gradient(to right, #f1f2b5 0%, #135058 100%);
+  background: linear-gradient(to right, #8e9eab 0%, #eef2f3 100%);
 }
 
 /* typography */
@@ -35,9 +35,11 @@ textarea {
 }
 /* make images easier to deal with */
 img {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: block;
+  margin: 0 auto;
+  border: 3px solid blue;
 }
 /* button */
 button {
@@ -50,22 +52,24 @@ button {
   margin: 0 auto;
   margin-top: 2em;
   background-color: #fff;
+  box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.3),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 575px) {
   .container {
-    max-width: 90vw;
+    max-width: 85vw;
   }
 }
 @media (min-width: 975px) {
   .container {
-    max-width: 900px;
+    max-width: 800px;
   }
 }
+
 /* header */
 .header {
   margin-bottom: 4.5em;
-  padding: 2em;
-  padding-top: 4em;
+  padding: 4em 3em;
   display: flex;
   flex-direction: row;
   border: 2px solid red;
@@ -88,6 +92,9 @@ button {
   height: 200px;
   background-color: #135058;
 }
+/* ==== 
+form
+ ====*/
 
 label {
   display: flex;
