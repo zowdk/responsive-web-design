@@ -57,12 +57,17 @@ button {
 }
 @media (min-width: 575px) {
   .container {
-    max-width: 85vw;
+    max-width: 90vw;
   }
 }
 @media (min-width: 975px) {
   .container {
     max-width: 800px;
+  }
+}
+@media (max-width: 975px) {
+  .container {
+    max-width: 90vw;
   }
 }
 
