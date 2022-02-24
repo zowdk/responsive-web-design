@@ -113,12 +113,13 @@ img {
   background-size: cover;
   height: 100vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .header-intro {
   flex-direction: column;
   align-content: flex-end;
   padding-bottom: 2.5em;
+  max-width: 40vw;
 }
 .container {
   width: 50%;
