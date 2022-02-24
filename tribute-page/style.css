@@ -94,7 +94,6 @@ span {
 /* make images easier to deal with */
 img {
   display: block;
-
   max-width: 570px;
   max-height: 90%;
   margin: 0 auto;
@@ -120,17 +119,14 @@ img {
   flex-direction: column;
   align-content: flex-end;
   padding-bottom: 2.5em;
-  border: 2px solid pink;
 }
 .container {
   width: 50%;
   margin: 0 auto;
   padding: 1em 2em 2em 2em;
-  border: 2px solid red;
 }
 .container-img {
   width: 50%;
-  border: 2px solid blue;
   padding: 0;
   margin: 0 auto;
 }
@@ -159,7 +155,6 @@ img {
 .wrapper {
   display: flex;
   justify-content: center;
-  border: 2px solid blue;
 }
 footer {
   text-align: right;
