@@ -1,0 +1,72 @@
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 0.9rem;
+}
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+/* typography */
+header {
+  font-size: 1.1rem;
+}
+h1,
+h2 {
+  font-weight: 300;
+}
+h1 {
+  font-size: 3.75rem;
+}
+h2 {
+  font-size: 2.625rem;
+  margin-top: 0;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  padding: 0.5em 0;
+  margin-bottom: 0.5em;
+}
+h3 {
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+#subheader,
+.intro-subheader {
+  font-size: 1.5rem;
+}
+#subheader {
+  font-weight: 900;
+}
+article p {
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.quote-primary {
+  font-size: 2.5rem;
+}
+.quote-secondary {
+  font-size: 1rem;
+  font-weight: 900;
+}
+/* layout */
+.container {
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.section-intro {
+  background: url("https://static01.nyt.com/images/2015/11/01/magazine/01lewis1/01mag-01lewis-t_CA1-articleLarge.jpg?quality=75&auto=webp&disable=upscale");
+  background-size: cover;
+  height: 100vh;
+}
+
+/* make images easier to deal with */
+img {
+  max-width: 100%;
+}
