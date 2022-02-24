@@ -49,6 +49,9 @@ h3 {
 #subheader {
   font-weight: 900;
 }
+.accent-text {
+  font-size: 1.5rem;
+}
 article p {
   font-size: 1.3rem;
   line-height: 1.5;
@@ -103,10 +106,12 @@ img {
   background-size: cover;
   height: 100vh;
   display: flex;
+  align-items: flex-end;
 }
 .header-intro {
   flex-direction: column;
   align-content: flex-end;
+  padding-bottom: 2.5em;
   border: 2px solid pink;
 }
 .container {
