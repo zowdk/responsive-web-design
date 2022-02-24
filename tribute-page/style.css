@@ -23,6 +23,7 @@ h2 {
 }
 h1 {
   font-size: 3.75rem;
+  letter-spacing: 1px;
 }
 h2 {
   font-size: 2.625rem;
@@ -37,6 +38,9 @@ h3 {
   font-weight: 900;
   margin-top: 1.5em;
   margin-bottom: 1em;
+}
+.pre-header {
+  font-size: 1.3rem;
 }
 #subheader,
 .intro-subheader {
@@ -60,6 +64,17 @@ article p {
   text-align: right;
   margin: 0 2em;
 }
+.small-text {
+  font-style: italic;
+  padding-bottom: 1em;
+}
+li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding-bottom: 0.25em;
+  max-width: 45ch;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -73,10 +88,27 @@ img {
   max-width: 570px;
   max-height: 90%;
   margin-top: 2.5rem;
-  margin-bottom: 1.5em;
+  /* margin-bottom: 1.5em; */
+}
+.source-text {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  padding-bottom: 0.75em;
+  color: #f4ece2;
 }
 
 /* layout */
+.section-intro {
+  background: url("https://static01.nyt.com/images/2015/11/01/magazine/01lewis1/01mag-01lewis-t_CA1-articleLarge.jpg?quality=75&auto=webp&disable=upscale");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+.header-intro {
+  flex-direction: column;
+  align-content: flex-end;
+  border: 2px solid pink;
+}
 .container {
   width: 50%;
   margin: 0 auto;
@@ -98,6 +130,7 @@ img {
   max-width: 80%;
   margin: 0 auto;
 }
+
 .row-dark {
   background-color: #22223b;
   color: #f2e9e4;
@@ -110,10 +143,10 @@ img {
   background-color: #9a8c98;
   color: #22223b;
 }
-.section-intro {
-  background: url("https://static01.nyt.com/images/2015/11/01/magazine/01lewis1/01mag-01lewis-t_CA1-articleLarge.jpg?quality=75&auto=webp&disable=upscale");
-  background-size: cover;
-  height: 100vh;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  border: 2px solid blue;
 }
 footer {
   text-align: right;
