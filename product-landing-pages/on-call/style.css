@@ -258,6 +258,7 @@ header {
 /* section privacy info */
 .section-privacy {
   background: linear-gradient(#ece9e6, #fff);
+  margin-bottom: 2em;
 }
 .container-cards-data {
   margin: 0 auto;
