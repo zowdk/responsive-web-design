@@ -377,7 +377,8 @@ section {
 form {
   margin: 0 auto;
   margin-bottom: 1em;
-  max-width: 900px;
+  border: 2px solid pink;
+  max-width: 80vw;
 }
 .form,
 form p {
@@ -392,8 +393,18 @@ label {
 }
 .form-input {
   padding: 1em;
-  width: 80%;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(#ece9e6, #ffffff);
+  box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.3),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 .input-textarea {
   min-height: 130px;
+}
+@media (min-width: 650px) {
+  form {
+    max-width: 900px;
+  }
 }
