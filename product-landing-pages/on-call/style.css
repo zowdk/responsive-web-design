@@ -285,6 +285,32 @@ section {
     justify-content: space-evenly;
   }
 }
+/* section product video */
+
+.section-video {
+  background-color: #000;
+  width: 100vw;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.video-wrapper {
+  position: relative;
+  padding: 0;
+}
+@media (min-width: 1150px) {
+  .video-wrapper {
+    display: flex;
+  }
+  video {
+  }
+}
 /* section privacy info */
 .section-privacy {
   background: linear-gradient(#ece9e6, #fff);
