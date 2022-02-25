@@ -81,6 +81,10 @@ img {
 .hero-img {
   width: 250px;
   height: 490px;
+  border: 2px solid purple;
+}
+.img-div {
+  border: 2px solid yellow;
 }
 /* layout */
 
@@ -123,6 +127,7 @@ header {
 }
 .container-hero {
   text-align: center;
+  border: 2px solid pink;
 }
 .description {
   margin-bottom: 2em;
@@ -130,12 +135,28 @@ header {
 .container-btn {
   display: flex;
   flex-direction: column;
-
   border: 2px solid blue;
 }
 
 @media (min-width: 650px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
   .container-hero {
+    width: 60%;
     text-align: left;
+  }
+  .img-div {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .container-btn {
+    display: flex;
+    flex-direction: row;
   }
 }
