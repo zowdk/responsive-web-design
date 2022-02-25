@@ -1,0 +1,24 @@
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 12px;
+}
+
+/* make images easier to deal with */
+img {
+  display: block;
+  width: 100%;
+}
+.logo-img {
+  max-width: 200px;
+}
+/*todo: media query for screens larger than 650px */
+/*  */
+.hero-img {
+  width: 250px;
+  height: 490px;
+}
