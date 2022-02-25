@@ -242,7 +242,7 @@ header {
   padding: 3em 1em;
   text-align: center;
 }
-.feature-list-item {
+.key-feature-list-item {
   padding-bottom: 1em;
   max-width: 50ch;
 }
@@ -309,4 +309,26 @@ header {
   background-position: bottom;
   background-blend-mode: multiply;
   color: #fff;
+}
+.container-summary {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+.feature-list-item,
+.info-list-item {
+  display: flex;
+}
+.container-summary .feature-icon {
+  justify-content: flex-start;
+  margin-right: 1em;
+  margin-left: 30%;
+}
+.info-list {
+  padding: 1em 2em;
+}
+
+.card-summary {
+  border: 2px solid white;
+  margin-bottom: 2em;
 }
