@@ -32,6 +32,7 @@ h3 {
 }
 h2 {
   padding: 2em 0;
+  letter-spacing: 2px;
 }
 h2,
 h3 {
@@ -114,7 +115,9 @@ header {
   box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.3),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
-
+.subheader {
+  margin-bottom: 1em;
+}
 /* navigation */
 .logo {
   border: 2px solid green;
@@ -144,7 +147,12 @@ header {
 }
 /* hero intro section */
 #hero {
-  background: linear-gradient(#334d50, #cbcaa5);
+  /* background: linear-gradient(#334d50, #cbcaa5); */
+  background-color: #929090;
+  background-image: url(./img/scenic-snow.jpg);
+  background-position: right;
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 .container-hero {
   text-align: center;
@@ -251,8 +259,9 @@ header {
 .section-privacy {
   background: linear-gradient(#ece9e6, #fff);
 }
-.container-cards {
+.container-cards-data {
   margin: 0 auto;
+  margin-bottom: 1em;
   border: 2px solid blue;
 }
 .card-data {
@@ -270,7 +279,7 @@ header {
   text-align: center;
 }
 @media (min-width: 650px) {
-  .container-cards {
+  .container-cards-data {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -279,4 +288,13 @@ header {
   .card-data {
     width: 400px;
   }
+}
+/* get product section */
+.get-product {
+  background-color: #1f1e1e;
+  background: url(./img/car-sunrise.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-blend-mode: multiply;
+  color: #fff;
 }
