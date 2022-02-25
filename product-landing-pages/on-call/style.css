@@ -327,8 +327,17 @@ header {
 .info-list {
   padding: 1em 2em;
 }
-
 .card-summary {
   border: 2px solid white;
   margin-bottom: 2em;
+}
+@media (min-width: 650px) {
+  .container-summary {
+    flex-direction: row;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  .card-summary {
+    width: 50%;
+  }
 }
