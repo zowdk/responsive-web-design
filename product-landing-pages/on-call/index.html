@@ -221,7 +221,7 @@
         </p>
       </section>
       <!-- product landing page section -->
-      <section class="get-product">
+      <section class="section-get-product">
         <h2>Install</h2>
         <div class="container-summary">
           <div class="card-summary">
@@ -300,6 +300,47 @@
           <button class="inverse">download Android</button>
           <button class="inverse">download Microsoft</button>
         </div>
+      </section>
+      <!-- form section -->
+      <section class="section-contact">
+        <h2>Contact</h2>
+        <form id="form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              class="form-input"
+              id="name"
+              placeholder="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              name="email"
+              class="form-input"
+              id="email"
+              type="email"
+              placeholder="Email address"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <p>Message</p>
+            <textarea
+              id="message"
+              class="form-input input-textarea"
+              name="message"
+              placeholder="Enter your message here..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label id="submit-label" for="submit"></label>
+            <input id="submit" type="submit" value="Submit" class="button" />
+          </div>
+        </form>
       </section>
     </main>
   </body>
