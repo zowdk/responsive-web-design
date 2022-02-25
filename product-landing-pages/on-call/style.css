@@ -24,6 +24,7 @@ h1 {
 }
 h3 {
   margin-bottom: 1.25em;
+  margin-top: 1em;
 }
 @media (max-width: 650px) {
   h1 {
@@ -60,12 +61,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-/* ultility classes */
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 /* buttons */
 button {
@@ -77,8 +72,19 @@ button {
   border-radius: 10px;
   border: 3px solid black;
   background-color: inherit;
+  font-weight: 600;
   letter-spacing: 0.5px;
   cursor: pointer;
+}
+/* ultility classes */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inverse {
+  color: #fff;
+  border: 3px solid #fff;
 }
 button:hover,
 button:focus {
@@ -165,6 +171,8 @@ header {
   display: flex;
   flex-direction: column;
   border: 2px solid blue;
+  max-width: 900px;
+  margin: 0 auto;
 }
 /* taking media queries from here */
 @media (min-width: 650px) {
@@ -180,7 +188,7 @@ header {
     text-align: left;
   }
   .img-div {
-    width: 50%;
+    width: 40%;
   }
 }
 @media (min-width: 1200px) {
@@ -245,6 +253,7 @@ header {
 .key-feature-list-item {
   padding-bottom: 1em;
   max-width: 50ch;
+  margin: 0 auto;
 }
 .features-container {
   margin: 0 auto;
@@ -329,6 +338,7 @@ header {
 }
 .card-summary {
   border: 2px solid white;
+  border-radius: 10px;
   margin-bottom: 2em;
 }
 @media (min-width: 650px) {
@@ -339,5 +349,6 @@ header {
   }
   .card-summary {
     width: 50%;
+    margin-right: 1em;
   }
 }
