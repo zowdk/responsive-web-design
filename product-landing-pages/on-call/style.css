@@ -33,10 +33,35 @@ li {
 nav li,
 .nav-list-item {
   list-style-type: none;
+  font-weight: 600;
 }
 a {
   text-decoration: none;
   color: inherit;
+}
+/* ultility classes */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* buttons */
+button {
+  border: none;
+  padding: 10px 30px;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: inherit;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+button:hover,
+button:focus {
+  box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.3),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 /* make images easier to deal with */
@@ -88,5 +113,24 @@ header {
   }
   .nav-list-item {
     padding-right: 1em;
+  }
+}
+/* hero/ intro section */
+.container-hero {
+  text-align: center;
+}
+.description {
+  margin-bottom: 2em;
+}
+.container-btn {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid blue;
+}
+
+@media (min-width: 650px) {
+  .container-hero {
+    text-align: left;
   }
 }
