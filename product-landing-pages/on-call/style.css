@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Audiowide&family=Hind+Madurai:wght@300;600&family=Orbitron&family=Press+Start+2P&family=Roboto:wght@300;900&display=swap");
+
 /* resets */
 * {
   margin: 0;
@@ -6,6 +8,13 @@
 }
 html {
   font-size: 12px;
+}
+/* setting up the body */
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Hind Madurai", sans-serif;
+  color: #000;
 }
 
 /* make images easier to deal with */
