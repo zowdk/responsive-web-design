@@ -58,17 +58,32 @@ img {
 
 header {
   display: flex;
+  background-color: #fff;
 }
 /* navigation */
 .logo {
   border: 2px solid green;
+}
+.nav-list {
+  text-align: center;
+  border: 2px solid purple;
 }
 .nav-bar {
   border: 2px solid red;
   margin: 0 auto;
   width: 90vw;
 }
-
-.nav-list {
-  text-align: center;
+@media (min-width: 650px) {
+  .nav-bar,
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-list {
+    width: 30vw;
+  }
+  .nav-list-item {
+    padding-right: 1em;
+  }
 }
