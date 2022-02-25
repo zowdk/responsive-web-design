@@ -118,6 +118,9 @@ header {
   }
 }
 /* hero/ intro section */
+#hero {
+  /* background: linear-gradient(#334d50, #cbcaa5); */
+}
 .container-hero {
   text-align: center;
 }
