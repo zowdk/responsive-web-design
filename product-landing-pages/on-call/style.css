@@ -37,6 +37,10 @@ h2,
 h3 {
   text-align: center;
 }
+section p {
+  max-width: 90vw;
+  margin: 0 auto;
+}
 p {
   text-align: center;
 }
@@ -248,6 +252,7 @@ header {
   background: linear-gradient(#ece9e6, #fff);
 }
 .container-cards {
+  margin: 0 auto;
   border: 2px solid blue;
 }
 .card-data {
@@ -263,4 +268,15 @@ header {
 }
 .data-icon {
   text-align: center;
+}
+@media (min-width: 650px) {
+  .container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 70vw;
+  }
+  .card-data {
+    width: 400px;
+  }
 }
