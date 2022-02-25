@@ -37,6 +37,9 @@ h3 {
 li {
   margin: 0.3em 0;
 }
+ul {
+  list-style-type: none;
+}
 nav li,
 .nav-list-item {
   list-style-type: none;
@@ -78,14 +81,14 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.logo-img,
-.img-features {
+.logo-img {
   max-width: 200px;
   margin: 0 auto;
   padding-bottom: 0.25em;
   border: 2px solid pink;
 }
-.hero-img {
+.hero-img,
+.img-features {
   width: 250px;
   height: 490px;
   border: 2px solid purple;
@@ -214,4 +217,13 @@ header {
   background-size: cover;
   background-blend-mode: multiply;
   color: #fff;
+}
+.features-container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+.features-list {
+  border: 2px solid red;
+  padding: 3em 1em;
+  text-align: center;
 }
