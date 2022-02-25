@@ -47,6 +47,7 @@ img {
 .logo-img {
   max-width: 200px;
   margin: 0 auto;
+  padding-bottom: 0.25em;
   border: 2px solid pink;
 }
 /*todo: media query for screens larger than 650px */
@@ -59,6 +60,8 @@ img {
 header {
   display: flex;
   background-color: #fff;
+  box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.3),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 /* navigation */
 .logo {
