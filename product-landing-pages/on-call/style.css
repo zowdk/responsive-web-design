@@ -287,6 +287,17 @@ header {
   }
   .card-data {
     width: 400px;
+    height: auto;
+  }
+  .data-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .data-list-item {
+    padding-top: 2em;
+    padding-right: 2em;
+    margin: 0 auto;
   }
 }
 /* get product section */
