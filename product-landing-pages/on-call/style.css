@@ -291,8 +291,8 @@ header {
 }
 /* get product section */
 .get-product {
-  background-color: #1f1e1e;
-  background: url(./img/car-sunrise.jpg);
+  background-color: #5e5d5d;
+  background-image: url(./img/car-sunrise.jpg);
   background-size: cover;
   background-position: bottom;
   background-blend-mode: multiply;
