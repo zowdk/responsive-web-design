@@ -61,6 +61,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:focus,
+a:hover {
+  color: darkred;
+}
 
 /* buttons */
 button,
@@ -86,6 +90,11 @@ button,
 .inverse {
   color: #fff;
   border: 3px solid #fff;
+}
+.inverse:hover,
+.inverse:focus {
+  color: #000;
+  background-color: #fff;
 }
 button:hover,
 button:focus {
