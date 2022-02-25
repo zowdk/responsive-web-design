@@ -78,13 +78,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.logo-img {
+.logo-img,
+.img-features {
   max-width: 200px;
   margin: 0 auto;
   padding-bottom: 0.25em;
   border: 2px solid pink;
 }
-/*todo: media query for screens larger than 650px */
 .hero-img {
   width: 250px;
   height: 490px;
@@ -171,7 +171,7 @@ header {
 /* section why this app */
 
 .section-why {
-  background-color: #646060;
+  background-color: #858080;
   background-image: url(./img/scenic-mountain.jpg);
   background-size: cover;
   background-blend-mode: multiply;
@@ -206,4 +206,12 @@ header {
     flex-direction: wrap;
     margin: 0 auto;
   }
+}
+/* section key features */
+.section-features {
+  background-color: #858080;
+  background-image: url(./img/app-in-use.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: #fff;
 }
