@@ -16,6 +16,28 @@ body {
   font-family: "Hind Madurai", sans-serif;
   color: #000;
 }
+/*typography */
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 4rem 0 1rem 0;
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+li {
+  margin: 0.3em 0;
+}
+nav li,
+.nav-list-item {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* make images easier to deal with */
 img {
@@ -24,10 +46,29 @@ img {
 }
 .logo-img {
   max-width: 200px;
+  margin: 0 auto;
+  border: 2px solid pink;
 }
 /*todo: media query for screens larger than 650px */
-/*  */
 .hero-img {
   width: 250px;
   height: 490px;
+}
+/* layout */
+
+header {
+  display: flex;
+}
+/* navigation */
+.logo {
+  border: 2px solid green;
+}
+.nav-bar {
+  border: 2px solid red;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.nav-list {
+  text-align: center;
 }
