@@ -63,7 +63,8 @@ a {
 }
 
 /* buttons */
-button {
+button,
+.button {
   border: none;
   padding: 10px 30px;
   width: 200px;
@@ -261,10 +262,18 @@ section {
 .features-container {
   margin: 0 auto;
 }
+.wrapper {
+  border: 2px solid orange;
+}
+/* todo: expand .features-container to justify content evenly */
 @media (min-width: 650px) {
+  .wrapper {
+    max-width: 80vw;
+  }
   .container-features {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 /* section privacy info */
@@ -364,4 +373,27 @@ section {
   background-position: center;
   background-blend-mode: multiply;
   color: #fff;
+}
+form {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  max-width: 900px;
+}
+.form,
+form p {
+  text-align: left;
+}
+.form-group {
+  margin-bottom: 1em;
+}
+label {
+  display: flex;
+  margin-bottom: 0.25em;
+}
+.form-input {
+  padding: 1em;
+  width: 80%;
+}
+.input-textarea {
+  min-height: 130px;
 }
