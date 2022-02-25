@@ -28,7 +28,7 @@ h1 {
   }
 }
 h2 {
-  padding-top: 2em;
+  padding: 2em 0;
 }
 h2,
 h3 {
@@ -148,7 +148,7 @@ header {
   flex-direction: column;
   border: 2px solid blue;
 }
-
+/* taking media queries from here */
 @media (min-width: 650px) {
   .wrapper {
     display: flex;
@@ -162,7 +162,7 @@ header {
     text-align: left;
   }
   .img-div {
-    width: 40%;
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
@@ -218,12 +218,22 @@ header {
   background-blend-mode: multiply;
   color: #fff;
 }
-.features-container {
-  max-width: 90vw;
-  margin: 0 auto;
-}
+
 .features-list {
   border: 2px solid red;
   padding: 3em 1em;
   text-align: center;
+}
+.feature-list-item {
+  padding-bottom: 1em;
+  max-width: 50ch;
+}
+.features-container {
+  margin: 0 auto;
+}
+@media (min-width: 650px) {
+  .container-features {
+    display: flex;
+    flex-direction: row;
+  }
 }
