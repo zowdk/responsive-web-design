@@ -470,3 +470,12 @@ label {
     max-width: 900px;
   }
 }
+/* footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2em 3em;
+}
