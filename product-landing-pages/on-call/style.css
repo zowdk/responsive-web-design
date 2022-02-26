@@ -58,6 +58,7 @@ ul {
 nav li,
 .nav-list-item {
   list-style-type: none;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 a {
@@ -113,9 +114,10 @@ img {
   margin: 0 auto;
 }
 .logo-img {
-  max-width: 200px;
+  width: 200px;
   margin: 0 auto;
   padding-bottom: 0.25em;
+  padding-right: 0.5em;
   border: 2px solid pink;
 }
 .hero-img,
