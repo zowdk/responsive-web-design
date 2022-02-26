@@ -407,6 +407,9 @@ video {
 .info-list {
   padding: 1em 2em;
 }
+.info-list-item {
+  text-align: left;
+}
 .card-summary {
   border: 2px solid white;
   border-radius: 10px;
