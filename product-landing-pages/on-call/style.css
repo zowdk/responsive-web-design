@@ -436,8 +436,9 @@ video {
 form {
   margin: 0 auto;
   margin-bottom: 1em;
+  padding: 0 1.5em;
   border: 2px solid pink;
-  max-width: 80vw;
+  width: 80vw;
 }
 .form,
 form p {
@@ -456,6 +457,8 @@ label {
   width: 100%;
   border-radius: 10px;
   border: none;
+  font-family: inherit;
+  font-size: inherit;
   background: linear-gradient(#ece9e6, #ffffff);
   box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.3),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
