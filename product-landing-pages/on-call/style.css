@@ -134,16 +134,13 @@ img {
   margin: 0 auto;
   padding-bottom: 0.25em;
   padding-right: 0.5em;
-  border: 2px solid pink;
 }
 .hero-img,
 .img-features {
   width: 250px;
   height: 490px;
-  border: 2px solid purple;
 }
 .img-div {
-  border: 2px solid yellow;
 }
 /* layout */
 
@@ -163,14 +160,11 @@ section {
 }
 /* navigation */
 .logo {
-  border: 2px solid green;
 }
 .nav-list {
   text-align: center;
-  border: 2px solid purple;
 }
 .nav-bar {
-  border: 2px solid red;
   margin: 0 auto;
   width: 90vw;
 }
@@ -196,7 +190,6 @@ section {
   display: flex;
 }
 .container-hero {
-  border: 2px solid pink;
 }
 .description {
   margin-bottom: 2em;
@@ -206,7 +199,6 @@ section {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
-  border: 2px solid blue;
 }
 .wrapper {
   width: 100%;
@@ -246,7 +238,6 @@ section {
 }
 .container-cards {
   padding: 4em 2em;
-  border: 2px solid pink;
 }
 .card-icon {
   text-align: center;
@@ -284,7 +275,6 @@ section {
 }
 
 .features-list {
-  border: 2px solid red;
   padding: 3em 1em;
   text-align: center;
 }
@@ -297,7 +287,6 @@ section {
   margin: 0 auto;
 }
 .wrapper-features {
-  border: 2px solid orange;
   width: 100%;
 }
 @media (min-width: 650px) {
@@ -324,11 +313,8 @@ section {
 video {
   width: 100vw;
   display: block;
-
-  border: 2px solid green;
 }
 .video-wrapper {
-  border: 2px red solid;
   width: 100vw;
   aspect-ratio: 16/9;
   margin: 0 auto;
@@ -349,7 +335,6 @@ video {
 .container-cards-data {
   margin: 0 auto;
   margin-bottom: 1em;
-  border: 2px solid blue;
 }
 .card-data {
   border: 2px solid #ece9e6;
@@ -445,7 +430,6 @@ form {
   margin: 0 auto;
   margin-bottom: 1em;
   padding: 0 1.5em;
-  border: 2px solid pink;
   width: 80vw;
 }
 .form,
