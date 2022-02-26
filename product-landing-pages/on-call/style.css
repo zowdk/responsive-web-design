@@ -16,6 +16,7 @@ body {
   font-family: "Hind Madurai", sans-serif;
   color: #000;
 }
+
 /*typography */
 h1 {
   font-size: 3rem;
@@ -158,7 +159,7 @@ section {
     justify-content: space-between;
   }
   .nav-list {
-    width: 30vw;
+    width: 50vw;
   }
   .nav-list-item {
     padding-right: 1em;
@@ -187,12 +188,11 @@ section {
   max-width: 900px;
   margin: 0 auto;
 }
-/* taking media queries from here */
 @media (min-width: 650px) {
   .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
     max-width: 80vw;
     margin: 0 auto;
   }
@@ -288,34 +288,38 @@ section {
 /* section product video */
 
 .section-video {
-  background-color: #000;
+  background: #fff;
   width: 100vw;
 }
 
 video {
   position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  object-fit: cover;
-  overflow: hidden;
+  /* top: 0; */
+
+  width: 80vw;
+  height: auto;
+
+  border: 2px solid green;
 }
 .video-wrapper {
   position: relative;
   padding: 0;
+  border: 2px red solid;
+  width: auto;
 }
-@media (min-width: 1150px) {
-  .video-wrapper {
-    display: flex;
-  }
-  video {
+@media (min-width: 450px) {
+  .section-video {
+    background-image: url(./img/scenic-overhead.jpg);
+    background-size: cover;
   }
 }
+/* todo: stop the video hight from expanding past parent container */
 /* section privacy info */
 .section-privacy {
   background: linear-gradient(#ece9e6, #fff);
   margin-bottom: 2em;
 }
+
 .container-cards-data {
   margin: 0 auto;
   margin-bottom: 1em;
@@ -339,7 +343,7 @@ video {
   .container-cards-data {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 70vw;
   }
   .card-data {
@@ -429,6 +433,7 @@ label {
 .form-input {
   padding: 1em;
   width: 100%;
+
   border-radius: 10px;
   border: none;
   background: linear-gradient(#ece9e6, #ffffff);
