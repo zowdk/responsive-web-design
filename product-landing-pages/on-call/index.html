@@ -13,24 +13,35 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="nav-bar">
         <div class="logo">
           <img
             class="logo-img"
+            id="header-img"
             src="./img/unofficial-logo.png"
             alt="Unofficial Volvo logo"
           />
         </div>
 
         <!-- navigation -->
-        <nav>
+        <nav id="nav-bar">
           <ul class="nav-list">
-            <li class="nav-list-item"><a href="#why">About</a></li>
-            <li class="nav-list-item"><a href="#features">Features</a></li>
-            <li class="nav-list-item"><a href="#privacy">Privacy</a></li>
-            <li class="nav-list-item"><a href="#install">Install</a></li>
-            <li class="nav-list-item"><a href="#contact">Contact</a></li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#why">About</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#privacy">Privacy</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#install">Install</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -151,6 +162,7 @@
       <section class="section-video">
         <div class="video-wrapper">
           <video
+            id="video"
             playsinline
             autoplay
             muted
@@ -323,7 +335,7 @@
       <!-- form section -->
       <section class="section-contact" id="contact">
         <h2>Contact</h2>
-        <form id="form">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
           <div class="form-group">
             <label id="name-label" for="name">Name</label>
             <input
