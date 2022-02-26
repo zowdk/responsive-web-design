@@ -363,12 +363,11 @@ video {
   .container-cards-data {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    max-width: 70vw;
+    justify-content: space-evenly;
+    max-width: 80vw;
   }
   .card-data {
-    width: 400px;
-    height: auto;
+    width: 425px;
   }
   .data-list {
     display: flex;
