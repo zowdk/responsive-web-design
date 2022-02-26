@@ -289,15 +289,18 @@ section {
   border: 2px solid orange;
   width: 100%;
 }
-/* todo: expand .features-container to justify content evenly */
 @media (min-width: 650px) {
-  /* .wrapper {
-    max-width: 80vw; 
-  } */
   .container-features {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+  }
+  .features-list-container {
+    width: 50%;
+  }
+  .img-features {
+    width: 300px;
+    height: auto;
   }
 }
 /* section product video */
