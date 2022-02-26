@@ -141,7 +141,7 @@ header {
   margin-bottom: 1em;
 }
 section {
-  min-height: 100vh;
+  height: 100vh;
 }
 /* navigation */
 .logo {
@@ -278,8 +278,8 @@ section {
 }
 /* todo: expand .features-container to justify content evenly */
 @media (min-width: 650px) {
-  .wrapper {
-    max-width: 80vw;
+  /* .wrapper {
+    max-width: 80vw; */
   }
   .container-features {
     display: flex;
