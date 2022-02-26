@@ -25,9 +25,9 @@ h1 {
   margin: 4rem 0 1rem 0;
 }
 h2 {
-    font-size: 2.5rem;
-    padding: 2em 0;
-    letter-spacing: 2px;
+  font-size: 2.5rem;
+  padding: 2em 0;
+  letter-spacing: 2px;
 }
 
 h3 {
@@ -72,9 +72,9 @@ a:hover {
   color: darkred;
 }
 .card-icon,
-.feature-icon, 
+.feature-icon,
 .data-icon {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 /* buttons */
 button,
@@ -188,28 +188,31 @@ section {
   border: 2px solid pink;
 }
 .description {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 .container-btn {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto;
-    border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid blue;
+}
+.wrapper {
+  width: 100%;
 }
 @media (min-width: 650px) {
-    .wrapper {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 80vw;
-        margin: 0 auto;
-    }
-    .container-hero {
-        width: 60%;
-        text-align: left;
-        align-self: flex-start;
-        margin-left: 3em;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .container-hero {
+    width: 60%;
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 3em;
   }
   .img-div {
     width: 40%;
@@ -282,15 +285,15 @@ section {
 .features-container {
   margin: 0 auto;
 }
-.wrapper {
+.wrapper-features {
   border: 2px solid orange;
   width: 100%;
 }
 /* todo: expand .features-container to justify content evenly */
 @media (min-width: 650px) {
   /* .wrapper {
-    max-width: 80vw; */
-  }
+    max-width: 80vw; 
+  } */
   .container-features {
     display: flex;
     flex-direction: row;
