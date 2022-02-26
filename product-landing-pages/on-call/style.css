@@ -182,6 +182,7 @@ section {
 }
 .container-hero {
   border: 2px solid pink;
+  padding-left: 3em;
 }
 .description {
   margin-bottom: 2em;
