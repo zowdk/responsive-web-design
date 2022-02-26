@@ -182,30 +182,30 @@ section {
 }
 .container-hero {
   border: 2px solid pink;
-  margin-left: 3em;
 }
 .description {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 .container-btn {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
-  border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid blue;
 }
 @media (min-width: 650px) {
-  .wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80vw;
-    margin: 0 auto;
-  }
-  .container-hero {
-    width: 60%;
-    text-align: left;
-    align-self: flex-start;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .container-hero {
+        width: 60%;
+        text-align: left;
+        align-self: flex-start;
+        margin-left: 3em;
   }
   .img-div {
     width: 40%;
