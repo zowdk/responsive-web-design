@@ -191,7 +191,7 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 80vw;
+    width: 80vw;
     margin: 0 auto;
   }
   .container-hero {
