@@ -158,9 +158,6 @@ section {
     flex-direction: row;
     justify-content: space-around;
   }
-  .nav-list {
-    /* width: 50vw; */
-  }
   .nav-list-item {
     padding-right: 1em;
   }
@@ -173,6 +170,7 @@ section {
   background-position: right;
   background-size: cover;
   background-blend-mode: multiply;
+  display: flex;
 }
 .container-hero {
   text-align: center;
