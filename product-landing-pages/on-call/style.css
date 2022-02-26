@@ -189,9 +189,6 @@ section {
   background-blend-mode: multiply;
   display: flex;
 }
-.container-hero {
-  padding-top: 4em;
-}
 .description {
   margin-bottom: 2em;
 }
@@ -217,6 +214,7 @@ section {
     text-align: left;
     align-self: flex-start;
     margin-left: 3em;
+    padding-top: 5em;
   }
   .img-div {
     width: 40%;
