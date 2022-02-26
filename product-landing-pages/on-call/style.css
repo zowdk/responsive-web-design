@@ -156,10 +156,10 @@ section {
   .nav-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .nav-list {
-    width: 50vw;
+    /* width: 50vw; */
   }
   .nav-list-item {
     padding-right: 1em;
