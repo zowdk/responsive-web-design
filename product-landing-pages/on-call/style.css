@@ -149,7 +149,8 @@ header {
   background-color: #fff;
   box-shadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.3),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100vw;
 }
 .subheader {
@@ -159,8 +160,7 @@ section {
   min-height: 100vh;
 }
 /* navigation */
-.logo {
-}
+
 .nav-list {
   text-align: center;
 }
@@ -190,6 +190,7 @@ section {
   display: flex;
 }
 .container-hero {
+  padding-top: 4em;
 }
 .description {
   margin-bottom: 2em;
