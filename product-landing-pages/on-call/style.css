@@ -76,6 +76,10 @@ a:focus,
 a:hover {
   color: darkred;
 }
+span {
+  color: goldenrod;
+  font-weight: 900;
+}
 .card-icon,
 .feature-icon,
 .data-icon {
