@@ -311,19 +311,16 @@ section {
 }
 
 video {
-  position: absolute;
-  /* top: 0; */
-
-  width: 80vw;
-  height: auto;
+  width: 100vw;
+  display: block;
 
   border: 2px solid green;
 }
 .video-wrapper {
-  position: relative;
-  padding: 0;
   border: 2px red solid;
-  width: auto;
+  width: 100vw;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
 }
 @media (min-width: 450px) {
   .section-video {
