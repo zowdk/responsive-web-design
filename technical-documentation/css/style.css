@@ -23,7 +23,7 @@ utility classes
 .container {
   margin: 0 auto;
   padding: 0 2em;
-  max-width: 90vw;
+  border: 2px solid blue;
 }
 .container-flex {
   display: flex;
@@ -134,7 +134,12 @@ aside {
 .main-page-content {
   width: 70vw;
 }
-
+@media (max-width: 860px) {
+  .main-page-content {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
 /* dropdown blocks */
 .section-block {
   width: 200px;
