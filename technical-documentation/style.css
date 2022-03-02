@@ -128,8 +128,11 @@ aside {
   text-align: left;
 }
 @media (max-width: 860px) {
-  .sidebar-widget {
+  aside {
     display: none;
+  }
+  .row {
+    width: 90vw;
   }
 }
 /* main content */
