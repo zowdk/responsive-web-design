@@ -16,7 +16,7 @@ document.addEventListener("click", (e) => {
   }
 
   //dropdown-button is clicked, display dropdown-menu
-  let currentDropDown = dropdownButton.querySelector("[data-dropdown");
+  let currentDropDown = dropdownButton.querySelector("[data-dropdown]");
 
   currentDropDown.classList.add("active");
 });
