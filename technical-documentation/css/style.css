@@ -166,3 +166,22 @@ aside {
   letter-spacing: 1.2px;
   font-weight: 400;
 }
+/* dropdowns */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  background-color: #ffbf69;
+  color: #fff;
+  font-size: inherit;
+  padding: 0.5em;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  pointer-events: none;
+}
