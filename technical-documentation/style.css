@@ -33,6 +33,8 @@ utility classes
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  border: 2px solid #fb8500;
+  padding: 1em;
 }
 /* ====
 typography 
@@ -43,7 +45,6 @@ h1 {
 }
 h2 {
   font-size: 1.5rem;
-  margin-top: 1.5rem;
 }
 p {
   font-size: 1.25rem;
@@ -117,4 +118,17 @@ aside {
 /* main content */
 .main-page-content {
   width: 100vw;
+}
+
+/* dropdown blocks */
+.section-block {
+  width: 200px;
+  height: 200px;
+  background-color: #fb8500;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+}
+.section-block-title {
+  color: #fff;
 }
