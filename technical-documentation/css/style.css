@@ -65,6 +65,11 @@ li {
   margin-top: 2em;
   margin-bottom: 0.5em;
 }
+.section-title,
+.section-subheader {
+  margin-bottom: 0.5em;
+}
+
 .widget-title {
   font-size: 1.3rem;
 }
