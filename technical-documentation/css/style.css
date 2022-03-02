@@ -151,10 +151,11 @@ aside {
   align-items: center;
   margin: 0 auto;
   margin-top: 1em;
+  transform: translateZ(0);
 }
 .section-block:hover,
 .section-block:focus {
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 .icon__section-block-dropdown {
   font-size: 3rem;
@@ -183,10 +184,12 @@ aside {
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-  pointer-events: none;
+  /* pointer-events: none; */
+  display: none;
 }
 .dropdown-menu.active {
   opacity: 1;
   transform: translateY(0);
-  pointer-events: auto;
+  display: block;
+  z-index: 10;
 }
