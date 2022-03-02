@@ -8,40 +8,82 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- header / nav -->
     <header>
-      <div class="logo">This is a placeholder for logo-img</div>
+      <div class="logo">
+        <h1><span>JavaScript</span> Documentation</h1>
+        <div>
+          <p>
+           A detailed guide to the JavaScript language
+          </p>
+      </div>
     </header>
-    <aside class="toc sidebar">
-      <div class="sidebar-widget">
-        <h2 class="widget-title">Table of Contents</h2>
-        <ul class="toc-list">
-          <li class="toc-list-item">Introduction</li>
-          <li class="toc-list-item">Grammar and types</li>
-          <li class="toc-list-item">Control flow and error handling</li>
-          <li class="toc-list-item">Loops and iteration</li>
-          <li class="toc-list-item">Functions</li>
-          <li class="toc-list-item">Expressions and operators</li>
-          <li class="toc-list-item">Numbers and dates</li>
-          <li class="toc-list-item">Text formatting</li>
-          <li class="toc-list-item">Indexed collections</li>
-          <li class="toc-list-item">Keyed collections</li>
-          <li class="toc-list-item">Working with objects</li>
-          <li class="toc-list-item">Details of the object model</li>
-          <li class="toc-list-item">Promises</li>
-          <li class="toc-list-item">Iterators and generators</li>
-          <li class="toc-list-item">Meta programming</li>
-          <li class="toc-list-item">JavaScript modules</li>
-        </ul>
-      </div>
-      <div class="sidebar-widget">
-        <h2 class="widget-title">Related Topics</h2>
-        <ul class="sidebar-quicklinks">
-          <li class="sidebar-quicklink">Complete Beginners</li>
-          <li class="sidebar-quicklink">JavaScript Guide</li>
-          <li class="sidebar-quicklink">Intermediate</li>
-          <li class="sidebar-quicklink">Advanced</li>
-        </ul>
-      </div>
-    </aside>
+    <!-- sidebar & quicklinks -->
+    <div class="container container-flex">
+      <aside class="toc sidebar">
+        <div class="sidebar-widget">
+          <h2 class="widget-title">Table of Contents</h2>
+          <ul class="toc-list">
+            <li class="toc-list-item">Introduction</li>
+            <li class="toc-list-item">Grammar and types</li>
+            <li class="toc-list-item">Control flow and error handling</li>
+            <li class="toc-list-item">Loops and iteration</li>
+            <li class="toc-list-item">Functions</li>
+            <li class="toc-list-item">Expressions and operators</li>
+            <li class="toc-list-item">Numbers and dates</li>
+            <li class="toc-list-item">Text formatting</li>
+            <li class="toc-list-item">Indexed collections</li>
+            <li class="toc-list-item">Keyed collections</li>
+            <li class="toc-list-item">Working with objects</li>
+            <li class="toc-list-item">Details of the object model</li>
+            <li class="toc-list-item">Promises</li>
+            <li class="toc-list-item">Iterators and generators</li>
+            <li class="toc-list-item">Meta programming</li>
+            <li class="toc-list-item">JavaScript modules</li>
+          </ul>
+        </div>
+        <div class="sidebar-widget">
+          <h2 class="widget-title">Related Topics</h2>
+          <ul class="sidebar-quicklinks">
+            <li class="sidebar-quicklink">Complete Beginners</li>
+            <li class="sidebar-quicklink">JavaScript Guide</li>
+            <li class="sidebar-quicklink">Intermediate</li>
+            <li class="sidebar-quicklink">Advanced</li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- main content -->
+      <main role="main">
+        <article class="main-page-content container">
+          <section class="row">
+              <!-- block 1 -->
+              <div class="section-block-dropdown" data-dropdown-button>
+                  <div class="icon__section-block-dropdown"></div>
+                  <h2 class="block-dropdown-title">Complete Beginners</h2>
+              </div>
+              <!-- block 2 -->
+              <div class="section-block-dropdown" data-dropdown-button>
+                <div class="icon__section-block-dropdown"></div>
+                <h2 class="block-dropdown-title">JavaScript Guide</h2>
+            </div>
+            <!-- block 3 -->
+            <div class="section-block-dropdown" data-dropdown-button>
+                <div class="icon__section-block-dropdown"></div>
+                <h2 class="block-dropdown-title">Intermediate</h2>
+            </div>
+            <!-- block 4 -->
+            <div class="section-block-dropdown" data-dropdown-button>
+                <div class="icon__section-block-dropdown"></div>
+                <h2 class="block-dropdown-title">Advanced</h2>
+            </div>
+
+          </section>
+           
+          
+
+        </article>
+      </main>
+    </div>
   </body>
 </html>
