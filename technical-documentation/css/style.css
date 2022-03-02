@@ -151,11 +151,11 @@ aside {
   align-items: center;
   margin: 0 auto;
   margin-top: 1em;
-  transform: translateZ(0);
+  /* transform: translateZ(0); */
 }
 .section-block:hover,
 .section-block:focus {
-  /* opacity: 0.8; */
+  background-color: rgba(251, 133, 0, 0.8);
 }
 .icon__section-block-dropdown {
   font-size: 3rem;
