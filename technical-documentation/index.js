@@ -8,7 +8,7 @@ document.addEventListener("click", (e) => {
   // find the right dropdown based on what was clicked
   const dropdownButton = e.target.matches("[data-dropdown-button]")
     ? e.target
-    : e.target.closest("[data-dropdown-button");
+    : e.target.closest("[data-dropdown-button]");
 
   //if click happens outside of any dropdown-button
   if (!dropdownButton) {
