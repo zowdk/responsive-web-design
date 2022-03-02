@@ -1,19 +1,25 @@
-/* quick resets */
+/* ====
+ quick resets
+ ==== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* setting up the body */
+/*====
+ setting up the body
+  ====*/
 body {
   line-height: 1.4;
   font-family: sans-serif;
   font-size: 1rem;
   font-weight: 200;
   text-align: center;
-  background-color: #f1faee;
+  background-color: #fff;
 }
-/* utility classes */
+/* ====
+utility classes
+==== */
 .container {
   margin: 0 auto;
   padding: 0 2em;
@@ -24,7 +30,9 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
 }
-/* typography */
+/* ====
+typography 
+====*/
 h1 {
   font-size: 1.75rem;
   margin-top: 1.5em;
@@ -53,4 +61,16 @@ a:hover,
 a:focus {
   color: #fb8500;
   text-decoration: underline;
+}
+/* ====
+layout 
+====*/
+
+header {
+  background-color: #f1faee;
+  text-align: left;
+  padding: 2em 0;
+}
+.logo {
+  padding: 0 0 3em 3em;
 }
