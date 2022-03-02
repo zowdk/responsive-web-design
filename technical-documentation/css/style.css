@@ -185,3 +185,8 @@ aside {
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
   pointer-events: none;
 }
+.dropdown-menu.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
