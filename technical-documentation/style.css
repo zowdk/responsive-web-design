@@ -127,8 +127,16 @@ aside {
   background-color: #fb8500;
   padding: 2em;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.section-block-title {
+.icon__section-block-dropdown {
+  font-size: 3rem;
+  color: #ffbf69;
+}
+.block-dropdown-title {
   color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
 }
