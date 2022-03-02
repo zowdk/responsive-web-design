@@ -29,15 +29,7 @@ utility classes
   display: flex;
   border: 2px solid #fb8500;
 }
-/* todo: how blocks should look at larger screens */
-/* .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  border: 2px solid #fb8500;
-  padding: 1em;
-  margin-top: 2em;
-} */
+
 .row {
   display: flex;
   flex-direction: column;
