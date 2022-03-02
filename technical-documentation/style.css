@@ -66,6 +66,8 @@ a:focus {
 layout 
 ====*/
 
+/* header */
+
 header {
   background-color: #f1faee;
   text-align: left;
@@ -73,4 +75,15 @@ header {
 }
 .logo {
   padding: 0 0 3em 3em;
+  width: 90vw;
+  border: 2px solid #fb8500;
+  margin: 0 auto;
+}
+@media (max-width: 675px) {
+  .logo {
+    flex-direction: column;
+  }
+  .logo p {
+    line-height: 1.5;
+  }
 }
