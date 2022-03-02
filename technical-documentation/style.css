@@ -45,3 +45,12 @@ span {
   font-weight: 900;
   font-size: 1.9rem;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover,
+a:focus {
+  color: #fb8500;
+  text-decoration: underline;
+}
