@@ -58,6 +58,9 @@ p,
 li {
   font-size: 1.25rem;
 }
+li {
+  text-align: left;
+}
 
 .toc-list-item,
 .sidebar-quicklink,
@@ -202,4 +205,11 @@ aside {
   transform: translateY(0);
   display: block;
   z-index: 10;
+}
+/* main articles */
+.article-header {
+  margin-bottom: 2em;
+}
+.section-title {
+  justify-content: left;
 }
