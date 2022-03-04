@@ -109,7 +109,7 @@
               <p>In contrast, JavaScript descends in spirit from a line of smaller, dynamically typed languages such as HyperTalk and dBASE. These scripting languages offer programming tools to a much wider audience because of their easier syntax, specialized built-in functionality, and minimal requirements for object creation.</p>
               <table>
                 <tbody>
-                  <tr>
+                  <tr class="table-header">
                     <td>JavaScript</td>
                     <td>Java</td>
                   </tr>
@@ -178,10 +178,12 @@
                 <img src="../img/Introduction.png" alt="">
               </div>
               <p>The console works the exact same way as eval: the last expression entered is returned. For the sake of simplicity, it can be imagined that every time something is entered into the console, it is actually surrounded by console.log around eval, like so:</p>
+            </br>
               <code>
                 console.log(eval('3 + 5'))
               </code>
             </div>
+          </section></br>
 
             <h3>Multi-line input in the Web Console</h3>
             <div class="article-body">
@@ -196,16 +198,16 @@
             <div class="article-body">
               <p>To get started with writing JavaScript, open the Web Console in multi-line mode, and write your first "Hello world" JavaScript code:</p>
               <code>
-                (function(){
-                  "use strict";
-                  /* Start of your code */
-                  function greetMe(yourName) {
-                    alert('Hello ' + yourName);
-                  }
+                (function(){</br>
+                 "use strict"; </br>
+                  /* Start of your code */</br>
+                  function greetMe(yourName) { </br>
+                    alert('Hello ' + yourName); </br>
+                 }</br>
                 
-                  greetMe('World');
-                  /* End of your code */
-                })();
+                  greetMe('World');</br>
+                /* End of your code */</br>
+              })();
                 
               </code>
               <p>Press Cmd+Enter or Ctrl+Enter (or click the Run button) to watch it unfold in your browser!</p>
