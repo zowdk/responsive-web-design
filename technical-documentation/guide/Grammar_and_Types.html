@@ -55,13 +55,12 @@
           <!-- section 1 -->
           <section class="row" id="basics">
              <h2 class="section-title">Basics</h2>
-             <!-- todo: give .section-titles ids -->
              <div class="article-body">
                <p>JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk, Perl, and Python.</p>
                <p>JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which means "early" in German) could be used as a variable name.</p>
 
                <code>
-                let Früh = "foobar"
+                <span class="keyword">let </span> Früh = <span class="string">"foobar"</span>
                </code>
 
                <p>But, the variable früh is not the same as Früh because JavaScript is case sensitive.</p>
@@ -99,15 +98,15 @@
             <h2 class="section-title">Declarations</h2>
             <div class="article-body">
              <p>JavaScript has three kinds of variable declarations.</p>
-             <p><span>var</span></p>
+             <p><span class="code">var</span></p>
              <p>
               Declares a variable, optionally initializing it to a value.
              </p>
-             <p><span>let</span></p>
+             <p><span class="code">let</span></p>
              <p>
               Declares a block-scoped, local variable, optionally initializing it to a value.
              </p>
-             <p><span>const</span></p>
+             <p><span class="code">const</span></p>
              <p>
               Declares a block-scoped, read-only named constant.
              </p>
@@ -175,30 +174,30 @@
           </p>
           <p>An attempt to access an undeclared variable results in a <strong>ReferenceError</strong> exception being thrown:</p>
           <code>
-            var a;</br>
-            console.log('The value of a is ' + a); // The value of a is undefined</br>
+            <span class="keyword">var</span> a;</br>
+            console.<span class="function">log</span><span class="string">('The value of a is '</span> + a); // The value of a is undefined</br>
 
-            console.log('The value of b is ' + b); // The value of b is undefined</br>
-            var b;</br>
+            console.<span class="function">log</span><span class="string">('The value of b is '</span> + b); // The value of b is undefined</br>
+            <span class="keyword">var</span> b;</br>
             // This one may puzzle you until you read 'Variable hoisting' below</br>
 
-            console.log('The value of c is ' + c); // Uncaught ReferenceError: c is not defined</br>
+            console.<span class="function">log</span><span class="string">('The value of c is '</span> + c); // Uncaught ReferenceError: c is not defined</br>
 
-            let x;</br>
-            console.log('The value of x is ' + x); // The value of x is undefined</br>
+            <span class="keyword">let</span> x;</br>
+            console.<span class="function">log</span><span class="string">('The value of x is '</span> + x); // The value of x is undefined</br>
 
-            console.log('The value of y is ' + y); // Uncaught ReferenceError: y is not defined</br>
-            let y;</br>
+            console.<span class="function">log</span><span class="string">('The value of y is '</span> + y); // Uncaught ReferenceError: y is not defined</br>
+            <span class="keyword">let</span> y;</br>
           </code>
           
           <p>You can use undefined to determine whether a variable has a value. In the following code, the variable input is not assigned a value, and the if statement evaluates to true.</p>
 
           <code>
-            var input;</br>
-            if (input === undefined) {</br>
-              doThis();</br>
-            } else {</br>
-              doThat();</br>
+            <span class="keyword">var</span> input;</br>
+            <span class="keyword">if</span> (input === <span class="keyword">undefined</span>) {</br>
+              <span class="function">doThis</span>();</br>
+            } <span class="keyword">else</span> {</br>
+              <span class="function">doThat</span>();</br>
             }
           </code>
 
@@ -207,24 +206,24 @@
           </p>
 
           <code>
-              var myArray = [];</br>
-              if (!myArray[0]) myFunction();
+            <span class="keyword">var</span> myArray = [];</br>
+            <span class="keyword">if</span> (!myArray[<span class="string">0</span>]) <span class="function">myFunction</span>();
           </code>
 
           <p>
             The undefined value converts to NaN when used in numeric context.
           </p>
           <code>
-            var a;</br>
-            a + 2;  // Evaluates to NaN
+            <span class="keyword">var</span> a;</br>
+            a + <span class="string">2</span>;  // Evaluates to NaN
           </code>
 
           <p>
             When you evaluate a null variable, the null value behaves as 0 in numeric contexts and as false in boolean contexts. For example:
           </p>
           <code>
-            var n = null; </br>
-            console.log(n * 32); // Will log 0 to the console
+            <span class="keyword">var</span> n = <span class="keyword">null</span>; </br>
+            console.<span class="function">log</span>(n * <span class="string">32</span>); // Will log 0 to the console
           </code>
         </div>
      </section>
@@ -244,19 +243,19 @@
         For example, the following code will log 5, because the scope of x is the global context (or the function context if the code is part of a function). The scope of x is not limited to the immediate if statement block.
        </p>
       <code>
-        if (true) {</br>
-          &nbsp;&nbsp;var x = 5;</br>
+        <span class="keyword">if</span> (<span class="string">true</span>) {</br>
+          &nbsp;&nbsp;<span class="keyword">var</span> x = 5;</br>
         }</br>
-        console.log(x);  // x is 5        
+        console.<span class="function">log</span>(x);  // x is 5        
       </code>
       <p>
         This behavior changes when using the let declaration (introduced in ECMAScript 2015).
       </p>
       <code>
-        if (true) {</br>
-          &nbsp;&nbsp;  let y = 5;</br>
+        <span class="keyword">if</span> (<span class="string">true</span>) {</br>
+          &nbsp;&nbsp;  <span class="keyword">let</span> y = <span class="string">5</span>;</br>
         }</br>
-        console.log(y);  // ReferenceError: y is not defined
+        console.<span class="function">log</span>(y);  // ReferenceError: y is not defined
         
       </code>
       </div>
@@ -275,18 +274,18 @@
         /**</br>
         * Example 1</br>
         */</br>
-        console.log(x === undefined); // true</br>
-        var x = 3;</br>
+        console.<span class="function">log</span>(x === <span class="keyword">undefined</span>); // true</br>
+        <span class="keyword">var</span> x = <span class="string">3</span>;</br>
 
         /**</br>
         * Example 2</br>
         */</br>
         // will return a value of undefined</br>
-        var myvar = 'my value';</br>
+        <span class="keyword">var</span> myvar = <span class="string">'my value'</span>;</br>
 
-        (function() {</br>
-          console.log(myvar); // undefined</br>
-          var myvar = 'local value';</br>
+        (<span class="keyword">function</span>() {</br>
+          console.<span class="function">log</span>(myvar); // undefined</br>
+          <span class="keyword">var</span> myvar = <span class="string">'local value'</span>;</br>
         })();
     </code>
     <p>
@@ -296,19 +295,19 @@
       /**</br>
       * Example 1</br>
       */</br>
-     var x;</br>
-     console.log(x === undefined); // true</br>
-     x = 3;</br>
+      <span class="keyword">var</span> x;</br>
+     console.<span class="function">log</span>(x === <span class="keyword">undefined</span>); // true</br>
+     x = <span class="string">3</span>;</br>
 
      /**</br>
       * Example 2</br>
       */</br>
-     var myvar = 'my value';</br>
+      <span class="keyword">var</span> myvar = <span class="string">'my value'</span>;</br>
      
-     (function() {</br>
-       var myvar;</br>
-       console.log(myvar); // undefined</br>
-       myvar = 'local value';</br>
+     (<span class="keyword">function</span>() {</br>
+      <span class="keyword">car</span> myvar;</br>
+       console.<span class="function">log</span>(myvar); // undefined</br>
+       myvar = '<span class="string">'local value'</span>;</br>
      })();     
     </code>
 
@@ -319,8 +318,8 @@
       In ECMAScript 2015, let and const are hoisted but not initialized. Referencing the variable in the block before the variable declaration results in a ReferenceError, because the variable is in a "temporal dead zone" from the start of the block until the declaration is processed.
     </p>
     <code>
-      console.log(x); // ReferenceError</br>
-      let x = 3;
+      console.<span class="function">log</span>(x); // ReferenceError</br>
+      <span class="keyword">let</span> x = <span class="string">3</span>;
     </code>
     </div>
 
@@ -335,18 +334,18 @@
         <code>
           /* Function declaration */</br>
           
-          foo(); // "bar"</br>
+          <span class="function">foo</span>(); // "bar"</br>
 
-          function foo() {</br>
-            console.log('bar');</br>
+          <span class="keyword">function</span> <span class="function">foo</span>() {</br>
+            console.<span class="function">log</span>(<span class="string">'bar'</span>);</br>
           }</br>
 
           /* Function expression */</br>
 
-          baz(); // TypeError: baz is not a function</br>
+          <span class="function">baz</span>(); // TypeError: baz is not a function</br>
 
-          var baz = function() {</br>
-            console.log('bar2');</br>
+          <span class="keyword">var</span> <span class="function">baz</span> = <span class="keyword">function</span>() {</br>
+            console.<span class="function">log</span>(<span class="string">'bar2'</span>);</br>
           };</br>
 
         </code>
@@ -383,7 +382,7 @@
           The syntax of a constant identifier is the same as any variable identifier: it must start with a letter, underscore, or dollar sign ($), and can contain alphabetic, numeric, or underscore characters.
         </p>
         <code>
-          const PI = 3.14;
+          <span class="keyword">const</span> <span class="constant">PI</span> = <span class="number">3.14</span>;
         </code>
         <p>
           A constant cannot change value through assignment or be re-declared while the script is running. It must be initialized to a value. 
@@ -397,13 +396,13 @@
 
         <code>
           // THIS WILL CAUSE AN ERROR</br>
-              function f() {};</br>
-              const f = 5;</br>
+          <span class="keyword">function</span> <span class="function">f</span>() {};</br>
+          <span class="keyword">const</span> f = <span class="string">5</span>;</br>
 
               // THIS WILL CAUSE AN ERROR TOO</br>
-              function f() {</br>
-                const g = 5;</br>
-                var g;</br>
+              <span class="keyword">function</span> <span class="function">f</span>() {</br>
+                <span class="keyword">const</span> g = <span class="string">5</span>;</br>
+                <span class="keyword">var</span> g;</br>
 
                 //statements</br>
               }
@@ -412,17 +411,17 @@
           However, the properties of objects assigned to constants are not protected, so the following statement is executed without problems.
         </p>
         <code>
-          const MY_OBJECT = {'key': 'value'};</br>
-          MY_OBJECT.key = 'otherValue';
+          <span class="keyword">const</span> <span class="constant">MY_OBJECT</span>  = {<span class="property">'key'</span>: <span class="string">'value'</span>};</br>
+          <span class="constant">MY_OBJECT</span>.key = <span class="string">'otherValue'</span>;
         </code>
 
         <p>
           Also, the contents of an array are not protected, so the following statement is executed without problems.
         </p>
         <code>
-          const MY_ARRAY = ['HTML','CSS'];</br>
-          MY_ARRAY.push('JAVASCRIPT');</br>
-          console.log(MY_ARRAY); //logs ['HTML','CSS','JAVASCRIPT'];
+          <span class="keyword">const</span> <span class="constant">MY_ARRAY</span> = [<span class="string">'HTML'</span>,<span class="string">'CSS'</span>];</br>
+          <span class="constant">MY_ARRAY</span>.<span class="function">push</span>(<span class="constant">'JAVASCRIPT'</span>);</br>
+          console.<span class="function">log</span>(<span class="constant">MY_ARRAY</span>); //logs ['HTML','CSS','JAVASCRIPT'];
         </code>
       </div>
    </section>
@@ -478,11 +477,11 @@
       So, for example, you could define a variable as follows:
     </p>
     <code>
-      var answer = 42;
+      <span class="keyword">var</span> answer = <span class="number">42</span>;
     </code>
     <p>And later, you could assign the same variable a string value, for example:</p>
     <code>
-      answer = 'Thanks for all the fish...';
+      answer = <span class="string">'Thanks for all the fish...'</span>;
     </code>
     <p>Because JavaScript is dynamically typed, this assignment does not cause an error message.</p>
 
@@ -498,15 +497,15 @@
       In expressions involving numeric and string values with the + operator, JavaScript converts numeric values to strings. For example, consider the following statements:
     </p>
     <code>
-      x = 'The answer is ' + 42 // "The answer is 42" </br>
-      y = 42 + ' is the answer' // "42 is the answer"
+      x = <span class="string">' The answer is '</span> + <span class="number">42</span> // "The answer is 42" </br>
+      y = <span class="number">42</span> + <span class="string">' is the answer'</span> // "42 is the answer"
     </code>
     <p>
       With all other operators, JavaScript does not convert numeric values to strings. For example:
     </p>
     <code>
-      '37' - 7 // 30 </br>
-      '37' + 7 // "377"
+      <span class="number">'37'</span> - <span class="number">7</span> // 30 </br>
+      <span class="number">'37'</span> + <span class="number">7</span> // "377"
     </code>
   </div>
 </section>
@@ -523,14 +522,14 @@
     </ul>
     <p>parseInt only returns whole numbers, so its use is diminished for decimals.</p>
     <code>
-      parseInt('101', 2) // 5
+      <span class="function">parseInt</span>(<span class="string">'101'</span>, <span class="number">2</span>) // 5
     </code>
     <p>
       An alternative method of retrieving a number from a string is with the + (unary plus) operator:
     </p>
     <code>
-      '1.1' + '1.1' // '1.11.1' </br>
-      (+'1.1') + (+'1.1') // 2.2 </br>
+      <span class="string">'1.1'</span> + <span class="string">'1.1'</span> // <span class="string">'1.11.1'</span></br>
+      (+ <span class="string">'1.1'</span>) + (+ <span class="string">'1.1'</span>) // 2.2 </br>
       // Note: the parentheses are added for clarity, not required.
 
     </code>
@@ -565,7 +564,7 @@
       The following example creates the coffees array with three elements and a length of three:
     </p>
     <code>
-      let coffees = ['French Roast', 'Colombian', 'Kona'];
+      <span class="keyword">let</span> coffees = [<span class="string">'French Roast'</span>, <span class="string">'Colombian'</span>, <span class="string">'Kona'</span>];
     </code>
     <p>
       If an array is created using a literal in a top-level script, JavaScript interprets the array each time it evaluates the expression containing the array literal. In addition, a literal used in a function is created each time the function is called.
@@ -577,7 +576,7 @@
       You do not have to specify all elements in an array literal. If you put two commas in a row, the array fills in the value undefined for the unspecified elements. The following example creates the fish array:
     </p>
     <code>
-      let fish = ['Lion', , 'Angel'];
+      <span class="keyword">let</span> fish = [<span class="string">'Lion'</span>, , <span class="string">'Angel'</span>];
     </code>
     <p>This array has two elements with values and one empty element:</p>
     <ul>
@@ -588,17 +587,17 @@
     <p>If you include a trailing comma at the end of the list of elements, the comma is ignored.</p>
     <p>In the following example, the length of the array is three. There is no myList[3]. All other commas in the list indicate a new element.</p>
     <code>
-      let myList = ['home', , 'school', ];
+      <span class="keyword">let</span> myList = [<span class="string">'home'</span>, , <span class="string">'school'</span>, ];
     </code>
     <p>In the following example, the length of the array is four, and myList[0] and myList[2] are missing.</p>
     <code>
-      let myList = [ ,'home', , 'school'];
+      <span class="keyword">let</span> myList = [<span class="string">'home'</span>, , <span class="string">'school'</span>];
     </code>
     <p>
       In the following example, the length of the array is four, and myList[1] and myList[3] are missing. Only the last comma is ignored.
     </p>
     <code>
-      let myList = ['home', , 'school', , ];
+      <span class="keyword">let</span> myList = [<span class="string">'home'</span>, , <span class="string">'school'</span> , ,];
     </code>
     <p>
       Understanding the behavior of extra commas is important to understanding JavaScript as a language.
@@ -714,30 +713,30 @@
       The following is an example of an object literal. The first element of the car object defines a property, myCar, and assigns to it a new string, "Saturn"; the second element, the getCar property, is immediately assigned the result of invoking the function (carTypes("Honda")); the third element, the special property, uses an existing variable (sales).
     </p>
     <code>
-      var sales = 'Toyota';</br>
+      <span class="keyword">var</span> sales = <span class="string">'Toyota'</span>;</br>
 
-      function carTypes(name) {</br>
-        if (name === 'Honda') {</br>
-          return name;</br>
-        } else {</br>
-          return "Sorry, we don't sell " + name + ".";</br>
+      <span class="keyword">function</span> <span class="function">carTypes</span>(name) {</br>
+        <span class="keyword">if</span> (name === <span class="string">'Honda'</span>) {</br>
+          <span class="keyword">return</span> name;</br>
+        } <span class="keyword">else</span> {</br>
+          <span class="keyword">return</span> <span class="string">"Sorry, we don't sell "</span> + name + <span class="string">"."</span>;</br>
         }</br>
       }</br>
 
-      var car = { myCar: 'Saturn', getCar: carTypes('Honda'), special: sales };</br>
+      <span class="keyword">var</span> car = { <span class="function">myCar</span>: <span class="string">'Saturn'</span>, <span class="function">getCar</span>: <span class="function">carTypes</span>(<span class="string">'Honda'</span>), <span class="function">special</span>: sales };</br>
 
-      console.log(car.myCar);   // Saturn</br>
-      console.log(car.getCar);  // Honda</br>
-      console.log(car.special); // Toyota
+      console.<span class="function">log</span>(car.myCar);   // Saturn</br>
+      console.<span class="function">log</span>(car.getCar);  // Honda</br>
+      console.<span class="function">log</span>(car.special); // Toyota
     </code>
     <p>
       Additionally, you can use a numeric or string literal for the name of a property or nest an object inside another. The following example uses these options.
     </p>
     <code>
-      var car = { manyCars: {a: 'Saab', b: 'Jeep'}, 7: 'Mazda' };</br>
+      <span class="keyword">var</span> car = { <span class="function">manyCars</span>: {<span class="function">a</span>: <span class="string">'Saab'</span>, <span class="function">b</span>: <span class="string">'Jeep'</span>}, <span class="number">7</span>: <span class="string">'Mazda'</span> };</br>
 
-      console.log(car.manyCars.b); // Jeep</br>
-      console.log(car[7]); // Mazda
+      console.<span class="function">log</span>(car.manyCars.b); // Jeep</br>
+      console.<span class="function">log</span>(car[7]); // Mazda
 
     </code>
     <p>
@@ -747,14 +746,14 @@
       Property names that are not valid identifiers cannot be accessed as a dot (.) property, but can be accessed and set with the array-like notation("[]").
     </p>
     <code>
-      var unusualPropertyNames = {</br>
-        '': 'An empty string',</br>
-        '!': 'Bang!'</br>
+      <span class="keyword">var</span> unusualPropertyNames = {</br>
+        <span class="property">''</span>: <span class="string">'An empty string'</span>,</br>
+        <span class="property">'!'</span>: <span class="string">'Bang!'</span></br>
       }</br>
-      console.log(unusualPropertyNames.'');   // SyntaxError: Unexpected string</br>
-      console.log(unusualPropertyNames['']);  // An empty string</br>
-      console.log(unusualPropertyNames.!);    // SyntaxError: Unexpected token !</br>
-      console.log(unusualPropertyNames['!']); // Bang!      
+      console.<span class="function">log</span>(unusualPropertyNames.'');   // SyntaxError: Unexpected string</br>
+      console.<span class="function">log</span>(unusualPropertyNames['']);  // An empty string</br>
+      console.<span class="function">log</span>(unusualPropertyNames.!);    // SyntaxError: Unexpected token !</br>
+      console.<span class="function">log</span>(unusualPropertyNames['!']); // Bang!      
     </code>
   </div>
   <!-- section 5d.2 -->
@@ -767,18 +766,18 @@
       Together, these also bring object literals and class declarations closer together, and allow object-based design to benefit from some of the same conveniences.
     </p>
     <code>
-      var obj = {</br>
+      <span class="keyword">var</span> obj = {</br>
         // __proto__</br>
-        __proto__: theProtoObj,</br>
+        <span class="function">__proto__</span>: theProtoObj,</br>
         // Shorthand for 'handler: handler'</br>
         handler,</br>
         // Methods</br>
-        toString() {</br>
+        <span class="function">toString</span>() {</br>
          // Super calls</br>
-         return 'd ' + super.toString();</br>
+         <span class="keyword">return</span> <span class="string">'d '</span> + <span class="keyword">super</span>.<span class="function">toString</span>();</br>
         },</br>
         // Computed (dynamic) property names</br>
-        [ 'prop_' + (() => 42)() ]: 42</br>
+        [ <span class="string">'prop_'</span> + (() => 42)() ]: 42</br>
     };
     </code>
   </div>
@@ -792,7 +791,7 @@
       A regex literal is a pattern enclosed between slashes. The following is an example of a regex literal.
     </p>
     <code>
-      var re = /ab+c/;
+      <span class="keyword">var</span> re = /ab+c/;
     </code>
     
   </div>
@@ -809,11 +808,11 @@
       The following are examples of string literals:
     </p>
     <code>
-      'foo'</br>
-      "bar"</br>
-      '1234'</br>
-      'one line \n another line'</br>
-      "John's cat"
+      <span class="string">'foo'</span></br>
+      <span class="string">"bar"</span></br>
+      <span class="string">'1234'</span></br>
+      <span class="string">'one line \n another line'</span></br>
+      <span class="string">"John's cat"</span>
     </code>
     <p>
       You should use string literals unless you specifically need to use a String object. See String for details on String objects.
@@ -823,30 +822,30 @@
     </p>
     <code>
       // Will print the number of symbols in the string including whitespace.</br>
-      console.log("John's cat".length)  // In this case, 10.      
+      console.<span class="function">log</span>(<span class="string">"John's cat"</span>.length)  // In this case, 10.      
     </code>
     <p>Template literals are also available. Template literals are enclosed by the back-tick (`) (grave accent) character instead of double or single quotes.</p>
     <p>Template literals provide syntactic sugar for constructing strings. (This is similar to string interpolation features in Perl, Python, and more.)</p>
   </div>
   <code>
     // Basic literal string creation</br>
-    `In JavaScript '\n' is a line-feed.`</br>
+    <span class="template-string">`In JavaScript '\n' is a line-feed.`</span></br>
     
     // Multiline strings</br>
-    `In JavaScript, template strings can run</br>
-     over multiple lines, but double and single</br>
-     quoted strings cannot.`</br>
+    <span class="template-string">`In JavaScript, template strings can run</span></br>
+    <span class="template-string">over multiple lines, but double and single</span></br>
+    <span class="template-string">quoted strings cannot.`</span></br>
     
     // String interpolation</br>
-    var name = 'Bob', time = 'today';</br>
-    `Hello ${name}, how are you ${time}?`</br>
+    <span class="keyword">var</span> name = <span class="string">'Bob'</span>, time = <span class="string">'today'</span>;</br>
+    <span class="template-string">`Hello</span> ${name}<span class="template-string">, how are you</span> ${time}<span class="template-string">?`</span></br>
   </code>
   <p>
     Tagged templates are a compact syntax for specifying a template literal along with a call to a "tag" function for parsing it; the name of the template tag function precedes the template literal — as in the following example, where the template tag function is named "myTag":
   </p>
   <code>
-    let myTag = (str, name, age) => `${str[0]}${name}${str[1]}${age}${str[2]}`;</br>
-    let [name, age] = ['Mika', 28];</br>
+    <span class="keyword">let</span> <span class="function">myTag</span> = (str, name, age) => `${str[<span class="number">0</span>]}${name}${str[<span class="number">1</span>]}${age}${str[<span class="number">2</span>]}`;</br>
+    <span class="keyword">let</span> [name, age] = [<span class="string">'Mika'</span>, <span class="number">28</span>];</br>
     myTag`Participant "${ name }" is ${ age } years old.`;</br>
     // Participant "Mika" is 28 years old.
   </code>
@@ -857,7 +856,7 @@
       In addition to ordinary characters, you can also include special characters in strings, as shown in the following example.
     </p>
     <code>
-      'one line \n another line'
+      <span class="string">'one line \n another line'</span>
     </code>
     <p>
       The following table lists the special characters that you can use in JavaScript strings.
@@ -939,32 +938,32 @@
     <p>For characters not listed in the table, a preceding backslash is ignored, but this usage is deprecated and should be avoided.</p>
     <p>You can insert a quotation mark inside a string by preceding it with a backslash. This is known as escaping the quotation mark. For example:</p>
     <code>
-      var quote = "He read \"The Cremation of Sam McGee\" by R.W. Service.";</br>
-      console.log(quote);      
+      <span class="keyword">var</span> quote = <span class="string">"He read \"The Cremation of Sam McGee\" by R.W. Service."</span>;</br>
+      console.<span class="function">log</span>(quote);      
     </code>
     <p>The result of this would be:</p>
     <code>
       He read "The Cremation of Sam McGee" by R.W. Service.
     </code>
     <p>To include a literal backslash inside a string, you must escape the backslash character. For example, to assign the file path c:\temp to a string, use the following:</p>
-    <code>var home = 'c:\\temp';</code>
+    <code><span class="keyword">var</span> home = <span class="string">'c:\\temp'</span>;</code>
     <p>You can also escape line breaks by preceding them with backslash. The backslash and line break are both removed from the value of the string.</p>
     <code>
-      var str = 'this string \</br>
-      is broken \</br>
-      across multiple \</br>
-      lines.'</br>
-      console.log(str);   // this string is broken across multiple lines.
+      <span class="keyword">var</span> str = <span class="string">'this string \</span></br>
+      <span class="string">is broken \</span></br>
+      <span class="string">across multiple \</span></br>
+      <span class="string">lines.'</span></br>
+      console.<span class="function">log</span>(str);   // this string is broken across multiple lines.
     </code>
     <p>
       Although JavaScript does not have "heredoc" syntax, you can get close by adding a line break escape and an escaped line break at the end of each line:
     </p>
     <code>
-      var poem =</br>
-      'Roses are red,\n\</br>
+      <span class="number">var</span> poem =</br>
+      <span class="template-string">'Roses are red,\n\</br>
       Violets are blue.\n\</br>
       Sugar is sweet,\n\</br>
-      and so is foo.'
+      and so is foo.'</span>
     </code>
     <p>
       ECMAScript 2015 introduces a new type of literal, namely template literals. This allows for many new features, including multiline strings!

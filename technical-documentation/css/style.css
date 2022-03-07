@@ -244,9 +244,40 @@ td {
   padding: 1em;
 }
 
+/* styling for code examples */
 code {
   background-color: #f1faee;
   padding: 1em;
   margin: 1em 0;
-  display: flex;
+  display: block;
+  font-size: inherit;
+}
+.function,
+.keyword,
+.string,
+.number,
+.template-string,
+.constant,
+.property,
+.code {
+  font-size: inherit;
+}
+.code {
+  color: #fb8500;
+}
+
+.keyword {
+  color: #1982c4;
+}
+.string,
+.constant,
+.number {
+  color: #8ac926;
+}
+.function,
+.property {
+  color: #ff595e;
+}
+.template-string {
+  color: #390099;
 }
