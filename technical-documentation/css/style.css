@@ -60,6 +60,10 @@ h1 {
 h2 {
   font-size: 1.5rem;
 }
+h3,
+h4 {
+  font-size: 1.25rem;
+}
 p,
 li {
   font-size: 1.25rem;
@@ -235,10 +239,16 @@ aside {
 /* table */
 table {
   border: 1px solid #000;
+  margin: 1.5em 0;
+}
+.table-header,
+caption {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 .table-header {
   background-color: #f1faee;
-  font-weight: 700;
 }
 td {
   padding: 1em;
@@ -250,6 +260,7 @@ code {
   padding: 1em;
   margin: 1em 0;
   display: block;
+  text-align: left;
   font-size: inherit;
 }
 .function,
