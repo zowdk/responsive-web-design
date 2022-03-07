@@ -152,6 +152,11 @@ aside {
     width: 90vw;
   }
 }
+.widget-sublink,
+.sublink-list-item {
+  font-size: inherit;
+  list-style-type: disc;
+}
 /* main content */
 .main-page-content {
   width: 70vw;
