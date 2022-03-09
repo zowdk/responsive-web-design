@@ -138,6 +138,9 @@ aside {
   width: 350px;
   margin: 2em 0.5em 0 0.5em;
 }
+.sidebar {
+  position: sticky;
+}
 .sidebar-widget {
   border: 20px solid #f1faee;
   padding: 1em;
@@ -156,7 +159,12 @@ aside {
 .sublink-list-item {
   font-size: inherit;
   list-style-type: disc;
+  padding-left: 0.5em;
 }
+.widget-dropdown {
+  font-size: inherit;
+}
+
 /* main content */
 .main-page-content {
   width: 70vw;
@@ -176,7 +184,6 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
   margin-top: 1em;
 }
 .section-block:hover,

@@ -30,9 +30,13 @@
           <ul class="toc-list">
             <li class="toc-list-item"><a href="#basics" class="widget-link">Basics</a></li>
             <li class="toc-list-item"><a href="#comments" class="widget-link">Comments</a></li>
+            <!-- todo: add dropdown menus to sidebar -->
+          
             <li class="toc-list-item"><a href="#declarations" class="widget-link">Declarations</a></li>
-            <li class="toc-list-item"><a href="#variables" class="widget-link">Variables</a>
-              <ul class="widget-sublink-list">
+            <li class="toc-list-item widget-link">Variables
+              <span class="widget-dropdown"><i class="fa-solid fa-angle-down"></i></span>
+              <ul class="widget-sublink-list" data-dropdown>
+                <li class="sublink-list-item"><a href="#variables" class="widget-link">Variables</a></li>
                 <li class="sublink-list-item"><a href="#" class="widget-link">Declaring variables</a></li>
                 <li class="sublink-list-item"><a href="#" class="widget-link">Evaluating variables</a></li>
                 <li class="sublink-list-item"><a href="#" class="widget-link">Variable scope</a></li>
@@ -43,6 +47,7 @@
               </ul>
             </li>
             <li class="toc-list-item"><a href="#data-structures-and-types" class="widget-link">Data structures and types</a>
+              <span class="widget-dropdown"><i class="fa-solid fa-angle-down"></i></span>
               <ul class="widget-sublink-list">
                 <li class="sublink-list-item"><a href="#" class="widget-link">Data types</a></li>
                 <li class="sublink-list-item"><a href="#" class="widget-link">Data type conversion</a></li>
@@ -50,7 +55,8 @@
                 <li class="sublink-list-item"><a href="#" class="widget-link">Converting strings to numbers</a></li>
               </ul>
           </li>
-            <li class="toc-list-item"><a href="#literals" class="widget-link">Literals</a>
+            <li class="toc-list-item"><a href="#literals" class="widget-link">Literals</a> 
+              <span class="widget-dropdown"><i class="fa-solid fa-angle-down"></i></span>
               <ul class="widget-sublink-list">
                 <li class="sublink-list-item"><a href="#" class="widget-link">Array literals</a></li>
                 <li class="sublink-list-item"><a href="#" class="widget-link">Boolean literals</a></li>
@@ -76,7 +82,7 @@
       <!-- main content -->
       <main role="main">
         <article class="main-page-content container">
-          <div class="article-header">
+          <div class="article-header" id="introduction">
             <h1 class="article-title">Grammar and types</h1>
             <p>This chapter discusses JavaScript's basic grammar, variable declarations, data types and literals.</p>
           </div>
