@@ -138,9 +138,7 @@ aside {
   width: 350px;
   margin: 2em 0.5em 0 0.5em;
 }
-.sidebar {
-  position: sticky;
-}
+
 .sidebar-widget {
   border: 20px solid #f1faee;
   padding: 1em;
@@ -226,6 +224,30 @@ aside {
   display: block;
   z-index: 10;
 }
+/* nav dropdowns */
+.nav ul {
+  position: relative;
+}
+.nav ul li a:hover {
+  color: cyan;
+  box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+.nav ul ul li a:hover {
+  box-shadow: none;
+}
+.nav ul ul {
+  transition: max-height 0.3s;
+  max-height: 0;
+  overflow-y: hidden;
+}
+.nav ul li:hover > ul {
+  overflow-y: hidden;
+  max-height: 500px;
+}
+.nav ul ul li {
+  position: relative;
+}
+
 /* ====
  main articles
 ====  */
