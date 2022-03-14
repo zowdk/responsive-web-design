@@ -92,6 +92,7 @@ li {
 }
 .widget-link {
   font-size: 0.9rem;
+  text-align: left;
 }
 span {
   color: #fb8500;
@@ -112,10 +113,13 @@ layout
 ====*/
 
 /* header */
+header h1,
+header p {
+  text-align: left;
+}
 
 header {
   background-color: #f1faee;
-  text-align: left;
   padding: 2em 0;
 }
 .logo {
@@ -256,13 +260,22 @@ nav {
 .nav__list {
   list-style: none;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   height: 100%;
   font-weight: 600;
   font-size: 1.75rem;
   text-decoration: none;
 }
+.nav__item,
+.nav__dropdown-item {
+  text-align: center;
+}
+
 .nav__link:hover {
-  color: rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-decoration: none;
 }
 .nav-toggle {
   padding: 0.5em;
@@ -291,12 +304,15 @@ nav {
 }
 .hamburger {
   display: flex;
-  position: relative;
+  position: fixed;
+  right: 20px;
+  top: 30px;
 }
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: rgba(251, 133, 0, 0.8);
+  /* background: rgba(251, 133, 0, 0.8); */
+  background: #000;
   width: 2em;
   height: 3.25px;
   border-radius: 1em;
@@ -314,6 +330,9 @@ nav {
 }
 .hamburger::after {
   bottom: 6px;
+}
+.nav__dropdown-item {
+  list-style-type: none;
 }
 
 /* ====
