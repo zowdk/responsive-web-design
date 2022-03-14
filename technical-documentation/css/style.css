@@ -145,7 +145,7 @@ aside {
   margin-bottom: 2em;
   text-align: left;
 }
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   aside {
     display: none;
   }
@@ -167,7 +167,7 @@ aside {
 .main-page-content {
   width: 70vw;
 }
-@media (max-width: 860px) {
+@media (max-width: 1000px) {
   .main-page-content {
     width: 100vw;
     margin: 0 auto;
@@ -227,13 +227,6 @@ aside {
 /* nav dropdowns */
 .nav ul {
   position: relative;
-}
-.nav ul li a:hover {
-  color: cyan;
-  box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
-}
-.nav ul ul li a:hover {
-  box-shadow: none;
 }
 .nav ul ul {
   transition: max-height 0.3s;
