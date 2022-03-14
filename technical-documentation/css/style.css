@@ -29,17 +29,14 @@ utility classes
 .container {
   margin: 0 auto;
   padding: 0 2em;
-  border: 2px solid blue;
 }
 .container-flex {
   display: flex;
-  border: 2px solid #fb8500;
 }
 
 .row {
   display: flex;
   flex-direction: column;
-  border: 2px solid #fb8500;
   padding: 1em;
 }
 @media (min-width: 530px) {
@@ -125,7 +122,6 @@ header {
 .logo {
   padding: 0 0 3em 3em;
   width: 90vw;
-  border: 2px solid #fb8500;
 }
 @media (max-width: 675px) {
   .logo {
@@ -138,7 +134,6 @@ header {
 
 /* widgets */
 aside {
-  border: 2px solid #fb8500;
   width: 350px;
   margin: 2em 0.5em 0 0.5em;
 }
