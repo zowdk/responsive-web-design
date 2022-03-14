@@ -20,3 +20,15 @@ document.addEventListener("click", (e) => {
 
   currentDropDown.classList.add("active");
 });
+
+// to make the hamburger nav button interactive
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelectorAll(".nav__link");
+
+navToggle.addEventListener("click", () => {
+  document.body.classList.toggle("nav-open");
+});
+
+navToggle.forEach((link) => {
+  link.addEventListener.classList.remove("nav-open");
+});
