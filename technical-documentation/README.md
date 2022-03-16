@@ -1,3 +1,5 @@
+![Technical Documentation Page](img/documentation-thumbnail.png)
+
 # Technical Documentation Page
 
 An html page built for freeCodeCamp's "Build a Technical Documentation Page" challenge. </br>
