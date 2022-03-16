@@ -1,4 +1,4 @@
-![Tribute Page](tribute-page/img/tribute-page-desktop.png)
+![Tribute Page](img/tribute-page-desktop.png)
 
 # Tribute Page
 
