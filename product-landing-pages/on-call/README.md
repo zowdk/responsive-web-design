@@ -1,4 +1,4 @@
-![Product Landning Page](product-landing-pages/on-call/img/product-landing-page.png =800)
+![Product Landning Page](product-landing-pages/on-call/img/product-landing-page.png)
 
 
 # Product Landing Page
