@@ -24,7 +24,7 @@
           <button class="nav-toggle" aria-label="toggle-navigation">
             <span class="hamburger"></span>
           </button>
-          <nav id="navbar">
+          <nav>
             <ul class="nav__list">
               <li class="nav__item"><a href="./Grammar_and_Types.html#basics" class="nav-link">Basics</a></li>
               <li class="nav__item"><a href="#comments" class="nav-link">Comments</a></li>
@@ -32,30 +32,30 @@
               <li class="nav__item"><a href="#variables" class="nav-link">Variables</a>
               <ul class="nav__dropdown-list">
                 <li class="nav__dropdown-item"><a href="#literals" class="nav-link">Literals</a></li>
-                <li class="nav__dropdown-item"><a href="#declaring-variables" class="nav-link">Declaring variables</a></li>
-                <li class="nav__dropdown-item"><a href="#evaluating-variables" class="nav-link">Evaluating variables </a></li>
-                <li class="nav__dropdown-item"><a href="#variable-scope" class="nav-link">Variable scope</a></li>
-                <li class="nav__dropdown-item"><a href="#variable-hoisting" class="nav-link">Variable hoisting</a></li>
-                <li class="nav__dropdown-item"><a href="#function-hoisting" class="nav-link">Function hoisting</a></li>
-                <li class="nav__dropdown-item"><a href="#global-variables" class="nav-link">Global variables</a></li>
+                <li class="nav__dropdown-item"><a href="#declaring_variables" class="nav-link">Declaring variables</a></li>
+                <li class="nav__dropdown-item"><a href="#evaluating_variables" class="nav-link">Evaluating variables </a></li>
+                <li class="nav__dropdown-item"><a href="#variable_scope" class="nav-link">Variable scope</a></li>
+                <li class="nav__dropdown-item"><a href="#variable_hoisting" class="nav-link">Variable hoisting</a></li>
+                <li class="nav__dropdown-item"><a href="#function_hoisting" class="nav-link">Function hoisting</a></li>
+                <li class="nav__dropdown-item"><a href="#global_variables" class="nav-link">Global variables</a></li>
                 <li class="nav__dropdown-item"><a href="#constants" class="nav-link">Constants</a></li>
               </ul></li>
-              <li class="nav__item"><a href="#data-structures-and-types" class="nav-link">Data structures + types</a>
+              <li class="nav__item"><a href="#data_structures_and_types" class="nav-link">Data structures + types</a>
               <ul class="nav__dropdown-list">
-                <li class="nav__dropdown-item"><a href="#data-types" class="nav-link">Data types</a></li>
-                <li class="nav__dropdown-item"><a href="#data-type-conversion" class="nav-link">Data type conversion</a></li>
-                <li class="nav__dropdown-item"><a href="#numbers-and-the-+-operator" class="nav-link">Numbers and the + operator</a></li>
-                <li class="nav__dropdown-item"><a href="#converting-strings-to-numbers" class="nav-link">Converting strings to numbers</a></li>
+                <li class="nav__dropdown-item"><a href="#data_types" class="nav-link">Data types</a></li>
+                <li class="nav__dropdown-item"><a href="#data_type_conversion" class="nav-link">Data type conversion</a></li>
+                <li class="nav__dropdown-item"><a href="#numbers_and_the_+_operator" class="nav-link">Numbers and the + operator</a></li>
+                <li class="nav__dropdown-item"><a href="#converting_strings_to_numbers" class="nav-link">Converting strings to numbers</a></li>
 
               </ul></li>
               <li class="nav__item"><a href="#literals" class="nav-link">Literals</a>
               <ul class="nav__dropdown-list">
-                <li class="nav__dropdown-item"><a href="#array-literals" class="nav-link">Array literals</a></li>
-                <li class="nav__dropdown-item"><a href="#boolean-literals" class="nav-link">Boolean literals</a></li>
-                <li class="nav__dropdown-item"><a href="#numeric-literals" class="nav-link">Numeric literals</a></li>
-                <li class="nav__dropdown-item"><a href="#object-literals" class="nav-link">Object literals</a></li>
-                <li class="nav__dropdown-item"><a href="#regexp-literals" class="nav-link">RegExp literals</a></li>
-                <li class="nav__dropdown-item"><a href="#string-literals" class="nav-link">String literals</a></li>
+                <li class="nav__dropdown-item"><a href="#array_literals" class="nav-link">Array literals</a></li>
+                <li class="nav__dropdown-item"><a href="#boolean_literals" class="nav-link">Boolean literals</a></li>
+                <li class="nav__dropdown-item"><a href="#numeric_literals" class="nav-link">Numeric literals</a></li>
+                <li class="nav__dropdown-item"><a href="#object_literals" class="nav-link">Object literals</a></li>
+                <li class="nav__dropdown-item"><a href="#regexp_literals" class="nav-link">RegExp literals</a></li>
+                <li class="nav__dropdown-item"><a href="#string_literals" class="nav-link">String literals</a></li>
 
               </ul></li>
               
@@ -67,7 +67,7 @@
     </header>
     <!-- sidebar & quicklinks -->
     <div class="container-flex">
-      <aside class="toc sidebar">
+      <aside id="navbar" class="toc sidebar">
         <div class="sidebar-widget nav">
           <h2 class="widget-title">Table of Contents</h2>
           <ul class="toc-list">
@@ -78,33 +78,33 @@
             <li class="toc-list-item widget-link"><a href="#variables" class="widget-link">Variables</a> 
               <span class="widget-dropdown"><i class="fa-solid fa-angle-down"></i></span>
               <ul class="widget-sublink-list" data-dropdown>
-                <li class="sublink-list-item nav__dropdown__item"><a href="#declaring-variables" class="widget-link dropdown__link">Declaring variables</a></li>
-                <li class="sublink-list-item nav__dropdown__item"><a href="#evaluating-variables" class="widget-link dropdown__link">Evaluating variables</a></li>
-                <li class="sublink-list-item nav__dropdown__item"><a href="#variable-scope" class="widget-link dropdown__link">Variable scope</a></li>
-                <li class="sublink-list-item nav__dropdown__item"><a href="#variable-hoisting" class="widget-link dropdown__link">Variable hoisting</a></li>
-                <li class="sublink-list-item nav__dropdown__item"><a href="#function-hoisting" class="widget-link dropdown__link">Function hoisting</a></li>
-                <li class="sublink-list-item nav__dropdown__item"><a href="#global-variables" class="widget-link dropdown__link">Global variables</a></li>
+                <li class="sublink-list-item nav__dropdown__item"><a href="#declaring_variables" class="widget-link dropdown__link">Declaring variables</a></li>
+                <li class="sublink-list-item nav__dropdown__item"><a href="#evaluating_variables" class="widget-link dropdown__link">Evaluating variables</a></li>
+                <li class="sublink-list-item nav__dropdown__item"><a href="#variable_scope" class="widget-link dropdown__link">Variable scope</a></li>
+                <li class="sublink-list-item nav__dropdown__item"><a href="#variable_hoisting" class="widget-link dropdown__link">Variable hoisting</a></li>
+                <li class="sublink-list-item nav__dropdown__item"><a href="#function_hoisting" class="widget-link dropdown__link">Function hoisting</a></li>
+                <li class="sublink-list-item nav__dropdown__item"><a href="#global_variables" class="widget-link dropdown__link">Global variables</a></li>
                 <li class="sublink-list-item nav__dropdown__item"><a href="#constants" class="widget-link dropdown__link">Constants</a></li>
               </ul>
             </li>
-            <li class="toc-list-item"><a href="#data-structures-and-types" class="widget-link">Data structures and types</a>
+            <li class="toc-list-item"><a href="#data_structures_and_types" class="widget-link">Data structures and types</a>
               <span class="widget-dropdown"><i class="fa-solid fa-angle-down"></i></span>
               <ul class="widget-sublink-list">
                 <li class="sublink-list-item"><a href="#data-types" class="widget-link">Data types</a></li>
-                <li class="sublink-list-item"><a href="#data-type-conversions" class="widget-link">Data type conversion</a></li>
-                <li class="sublink-list-item"><a href="#numbers-and-the-+-operator" class="widget-link">Numbers and the + operator</a></li>
-                <li class="sublink-list-item"><a href="#converting-strings-to-numbers" class="widget-link">Converting strings to numbers</a></li>
+                <li class="sublink-list-item"><a href="#data_type_conversions" class="widget-link">Data type conversion</a></li>
+                <li class="sublink-list-item"><a href="#numbers_and_the_+_operator" class="widget-link">Numbers and the + operator</a></li>
+                <li class="sublink-list-item"><a href="#converting_strings_to_numbers" class="widget-link">Converting strings to numbers</a></li>
               </ul>
           </li>
             <li class="toc-list-item"><a href="#literals" class="widget-link">Literals</a> 
               <span class="widget-dropdown"><i class="fa-solid fa-angle-down"></i></span>
               <ul class="widget-sublink-list">
-                <li class="sublink-list-item"><a href="#array-literals" class="widget-link">Array literals</a></li>
-                <li class="sublink-list-item"><a href="#boolean-literals" class="widget-link">Boolean literals</a></li>
-                <li class="sublink-list-item"><a href="#numeric-literals" class="widget-link">Numeric literals</a></li>
-                <li class="sublink-list-item"><a href="#object-literals" class="widget-link">Object literals</a></li>
-                <li class="sublink-list-item"><a href="#regexp-literals" class="widget-link">RegExp literals</a></li>
-                <li class="sublink-list-item"><a href="#string-literals" class="widget-link">String literals</a></li>
+                <li class="sublink-list-item"><a href="#array_literals" class="widget-link">Array literals</a></li>
+                <li class="sublink-list-item"><a href="#boolean_literals" class="widget-link">Boolean literals</a></li>
+                <li class="sublink-list-item"><a href="#numeric_literals" class="widget-link">Numeric literals</a></li>
+                <li class="sublink-list-item"><a href="#object_literals" class="widget-link">Object literals</a></li>
+                <li class="sublink-list-item"><a href="#regexp_literals" class="widget-link">RegExp literals</a></li>
+                <li class="sublink-list-item"><a href="#string_literals" class="widget-link">String literals</a></li>
               </ul>
             </li>
           </ul>
@@ -213,7 +213,7 @@
 
          <!-- section 3c -->
 
-         <section id="declaring-variables" class="main-section">
+         <section id="declaring_variables" class="main-section">
           <h3 class="section-title">Declaring variables</h3>
           <div class="article-body">
             <p>
@@ -241,7 +241,7 @@
 
        <!-- section 3d -->
 
-       <section id="evaluating-variables" class="main-section">
+       <section id="evaluating_variables" class="main-section">
         <h3 class="section-title">Evaluating variables</h3>
         <div class="article-body">
           <p>
@@ -305,7 +305,7 @@
 
      <!-- section 3e -->
 
-     <section id="variable-scope" class="main-section">
+     <section id="variable_scope" class="main-section">
       <h3 class="section-title">Variable scope</h3>
       <div class="article-body">
        <p>
@@ -337,7 +337,7 @@
    </section>
    <!-- section 3f -->
 
-   <section id="variable-hoisting" class="main-section">
+   <section id="variable_hoisting" class="main-section">
     <h3 class="section-title">Variable hoisting</h3>
     <div class="article-body">
      <p>
@@ -400,7 +400,7 @@
 
     <!-- section 3g -->
 
-    <section id="function-hoisting" class="main-section">
+    <section id="function_hoisting" class="main-section">
       <h3 class="section-title">Function hoisting</h3>
       <div class="article-body">
         <p>
@@ -429,7 +429,7 @@
 
     <!-- section 3h -->
 
-    <section id="global-variables" class="main-section" >
+    <section id="global_variables" class="main-section" >
       <h3 class="section-title">Global variables</h3>
       <div class="article-body">
         <p>
@@ -503,7 +503,7 @@
 
    <!-- section 4a -->
 
-   <section id="data-structures-and-types" class="main-section" >
+   <section id="data_structures_and_types" class="main-section" >
     <h2 class="section-title">Data structures and types</h2>
     <div class="article-body">
       <p>The latest ECMAScript standard defines eight data types:</p>
@@ -544,7 +544,7 @@
 
  <!-- section 4b -->
 
- <section id="data-type-conversion" class="main-section">
+ <section id="data_type_conversion" class="main-section">
   <h3 class="section-title">Data type conversion</h3>
   <div class="article-body">
     <p>JavaScript is a dynamically typed language. This means you don't have to specify the data type of a variable when you declare it. It also means that data types are automatically converted as-needed during script execution.</p>
@@ -565,7 +565,7 @@
 
 <!-- section 4c -->
 
-<section id="numbers-and-the-+-operator" class="main-section">
+<section id="numbers_and_the_+_operator" class="main-section">
   <h3 class="section-title">Numbers and the '+' operator</h3>
   <div class="article-body">
     <p>
@@ -587,7 +587,7 @@
 
 <!-- section 4d -->
 
-<section id="converting-strings-to-numbers" class="main-section" >
+<section id="converting_strings_to_numbers" class="main-section" >
   <h3 class="section-title">Converting strings to numbers</h3>
   <div class="article-body">
     <p>In the case that a value representing a number is in memory as a string, there are methods for conversion.</p>
@@ -629,7 +629,7 @@
 </section>
 <!-- section 5a -->
 
-<section id="array-literals" class="main-section">
+<section id="array_literals" class="main-section">
   <h3 class="section-title">Array literals</h3>
   <div class="article-body">
     <p>
@@ -685,7 +685,7 @@
 
 <!-- section 5b -->
 
-<section id="boolean-literals" class="main-section">
+<section id="boolean_literals" class="main-section">
   <h3 class="section-title">Boolean literals</h3>
   <div class="article-body">
     <p>The Boolean type has two literal values: true and false.</p>
@@ -694,7 +694,7 @@
 
 <!-- section 5c -->
 
-<section id="numeric-literals" class="main-section">
+<section id="numeric_literals" class="main-section">
   <!-- 5c.1 -->
   <h3 class="section-title">Numeric literals</h3>
   <div class="article-body">
@@ -779,7 +779,7 @@
 
 <!-- section 5d -->
 
-<section id="object-literals" class="main-section">
+<section id="object_literals" class="main-section">
   <!-- section 5d.1 -->
   <h3 class="section-title">Object literals</h3>
   <div class="article-body">
@@ -859,7 +859,7 @@
 </section>
 
 <!-- section 5e -->
-<section id="regexp-literals" class="main-section">
+<section id="regexp_literals" class="main-section">
   <h3 class="section-title">RegExp literals</h3>
   <div class="article-body">
     <p>
@@ -873,7 +873,7 @@
 </section>
 
 <!-- section 5f.1 -->
-<section id="string-literals" class="main-section">
+<section id="string_literals" class="main-section">
   <h3 class="section-title">String literals</h3>
   <div class="article-body">
     <p>
