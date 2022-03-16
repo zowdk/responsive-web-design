@@ -14,7 +14,7 @@ This repository contains my solutions to the responsive design projects as part 
 * Tribute Page [View Page](https://zowdk.github.io/responsive-web-design/tribute-page/) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
 * Survey Form [View Page](https://zowdk.github.io/responsive-web-design/survey-form/) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form/)
 * Product Landing Page [View Page](https://zowdk.github.io/responsive-web-design/product-landing-pages/on-call/) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)
-* Technical Documentation Page [View Page](https://zowdk.github.io/responsive-web-design/technical-documentation) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
+* Technical Documentation Page [View Page](https://zowdk.github.io/responsive-web-design/technical-documentation/javascript.html) | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
 * Personal Portfolio Page [View Page] | [Requirements](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
 
 </br>
