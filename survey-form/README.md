@@ -1,4 +1,4 @@
-![Survey Form](img/form-desktop.png)
+![Survey Form](img/form-thumbnail.png)
 # Danish Learning Experience Survey Form
 
 A survey form created for freeCodeCamp's Responsive Web Design challenge "Build A Survey Form."</br>
