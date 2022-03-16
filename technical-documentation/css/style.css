@@ -32,6 +32,7 @@ utility classes
 }
 .container-flex {
   display: flex;
+  border: 2px solid #fb8500;
 }
 
 .row {
@@ -47,6 +48,7 @@ utility classes
     width: 100%;
   }
 }
+
 /* ====
 typography 
 ====*/
@@ -93,8 +95,12 @@ li {
 }
 span {
   color: #fb8500;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 1.9rem;
+}
+footer span {
+  font-size: inherit;
+  font-weight: inherit;
 }
 a {
   text-decoration: none;
@@ -104,6 +110,10 @@ a:hover,
 a:focus {
   color: #fb8500;
   text-decoration: underline;
+}
+.source p,
+.signature p {
+  font-size: 0.9rem;
 }
 /* ====
 layout 
@@ -129,6 +139,18 @@ header {
   }
   .logo p {
     line-height: 1.5;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: auto;
+  padding: 1em;
+  background-color: #f1faee;
+}
+@media (max-width: 530px) {
+  footer {
+    flex-direction: column;
   }
 }
 
@@ -165,11 +187,17 @@ aside {
 /* main content */
 .main-page-content {
   width: 70vw;
+  min-height: 60vh;
 }
 @media (max-width: 1000px) {
   .main-page-content {
     width: 100vw;
     margin: 0 auto;
+  }
+}
+@media (max-width: 530px) {
+  .row {
+    align-items: center;
   }
 }
 /* dropdown blocks */
