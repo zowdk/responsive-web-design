@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>Hi, I'm Zoe</title>
     <link rel="stylesheet" href="style.css" />
     <!-- font awesome icons -->
     <script src="https://kit.fontawesome.com/7f3b3d32f3.js" crossorigin="anonymous"></script>
@@ -22,143 +22,253 @@
       </header>
 
       <!-- intro -->
-      <section>
-          <div class="container">
+      <section id="welcome-section">
+          <div class="container container-intro">
               <div class="container-flex">
                 <p class="small-text">Hej!</p>
               <h1>I'm Zoe.</br>
             Nice to meet you.</h1>
             <div class="container-emoji">
-                <p>💻 Junior Frontend Developer</p>
+                <p class="subheader">💻 Junior Frontend Developer</p>
             </div>  
               </div>
-              <div class="img-div">
+              <div class="img-div placeholder-img">
                   <p>placeholder for image</p>
               </div>
           </div>
       </section>
 
+      <section class="tallies">
+        <h2 class="section-title">2022</h2>
+        <div class="container container-tallies">
+          <div class="tally">
+            <p class="count">14</p>
+            <i class="fa-solid fa-code tally-icon"></i>
+            <p>things made</p>
+          </div>
+          <div class="tally">
+            <p class="count">227</p>
+            <i class="fa-solid fa-bicycle tally-icon"></i>
+            <p>km på cykel</p>
+          </div>
+          <div class="tally">
+            <p class="count">3</p>
+            <i class="fa-solid fa-book tally-icon"></i>
+            <p>books read</p>
+          </div>
+          <div class="tally">
+            <p class="count">56</p>
+            <i class="fa-solid fa-mug-hot tally-icon"></i>
+            <p>cups enjoyed</p>
+          </div>
+          <div class="tally">
+            <p class="count">156</p>
+            <i class="fa-solid fa-comments tally-icon"></i>
+            <p>hours danish study</p>
+          </div>
+        </div>
+
+      </section>
+
       <!-- about & projects -->
       <section id="projects">
-          <div class="container">
-              <!-- column 1 -->
-              <div class="column-content">
-                  <div class="text-tile">
-                      <h2>What I Do</h2>
-                      <p>
-                        I'm a self-taught Junior Developer ;-) I started coding in December 2020 after moving to Denmark. I enjoy the visual and creative aspects of Frontend and am passionate about learning software development so I can find faster, simpler, or funnier ways to solve problems I find interesting or important. 
-                        Currently, my time is organized around learnig JavaScript, Design Thinking, and Danish. </br>
-
-                        I live in Copenhagen with my family and our bicycles. </br>
-
-                        I am looking for my first full-time Junior Developer role. 
-                      </p>
-                  </div>
-                  <div class="project-tile">
-                    <a href="https://zowdk.github.io/responsive-web-design/product-landing-pages/on-call/">
-                      <img src="./img/on-call-thumbnail.png" alt="" class="project-thumbnail">
-                      <div class="project-post-thumb">
-                        <h3>Unofficial on-call</h3>
-                        <p>Solo Project | 1 week</p>
-                        <div class="icon-container">
-                          <i class="fa-brands fa-html5"></i>
-                          <i class="fa-brands fa-css3-alt"></i>
+              <div class="grid-parent">
+                <div class="column-content">
+                  <!-- tile 01 -->
+                      <div class="text-tile tile-1">
+                          <h2>What I Do</h2>
+                          <p>
+                            I'm a self-taught Junior Developer ;-) I started coding in December 2020 after moving to Denmark. I enjoy the visual and creative aspects of Frontend and am motivated to learn software development so I can find faster, simpler, or funnier ways to solve problems I find interesting or important. 
+                            Currently, my time is organized around learnig <strong>JavaScript</strong>, <strong>UX</strong>, <strong>React</strong>, and <strong>Danish (Studieprøven)</strong>. </p></br>
+    
+                           <p> I live in lovely Copenhagen with my family and our bicycles. </p>
+    
+                          <p>I am looking for my first full-time Junior Developer role. </p>
+                          
+                      </div>
+  
+                    <!-- tile 02 -->
+                      <div class="project-tile-200 featured tile-2">
+                        <a href="https://zowdk.github.io/responsive-web-design/product-landing-pages/on-call/">
+                          <img src="./img/on-call-thumbnail.png" alt="" class="project-thumbnail">
+                          <div class="project-post-thumb">
+                            <h3>Unofficial on-call</h3>
+                            <p>Solo Project | 1 week</p>
+                            <div class="icon-container">
+                              <i class="fa-brands fa-html5"></i>
+                              <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                            <p>Product landing page for an (unofficial) Volvo on-call app. Created for the freeCodeCamp challenge "Build a Product Landing Page."</p>
+                          </div>
+                        </a>
+                      </div>
+                      
+                      <!-- tile 03  -->
+                      <div class="project-tile-300 tile-3">
+                        <a href="https://zowdk.github.io/responsive-web-design/tribute-page/">
+                          <img src="./img/tribute-thumbnail.png" alt="" class="project-thumbnail">
+                          <h3> Tribute Page</h3>
+                          <p>Solo Project | 1 week </p>
+                          <div class="icon-container">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                          </div>
+                          <p>A tribute page dedicated to the lesser-known (underappreciated) Edna Lewis, as part of freeCodeCamp's Responsive Web Design curriculum.</p>
+                        </a>
+                      </div>
+                      <!-- tile 07  -->
+                        <div class="text-tile tile-7">
+                          <h2>Things I'm Good At</h2>
+                          <ul>
+                            <li><strong>Starting:</strong> In early stages, "messy" or fast-paced environments, I can quickly grasp the key objective/ bigger picture, translate vague directions into an actionable path and get crackin'.  </li>
+                            <li><strong>Cross-discipline collaboration:</strong> Naturally curious about others, I love working with and learning from folks who posess skills and backgrounds that are different from my own.</li>
+                            <li><strong>Figuring it out:</strong> I love a challenge. Coding has energized my approach to learning and problem solving. There's something new to learn from every project. Not knowing is ok, and so is asking for help when stuck! </li>
+                            <li><strong>Sharing what I learn</strong></li>
+                          </ul>
                         </div>
-                        <p>Product landing page for an (unofficial) Volvo on-call app. Created for the freeCodeCamp challenge "Build a Product Landing Page."</p>
-
-                      </div>
-                    </a>
-                  </div>
-                  <div class="project-tile">
-                    <a href="https://zowdk.github.io/responsive-web-design/tribute-page/">
-                      <img src="./img/tribute-thumbnail.png" alt="" class="project-thumbnail">
-                      <div class="icon-container">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                      </div>
-                      <p>A tribute page dedicated to the lesser-known (underappreciated) Edna Lewis, as part of freeCodeCamp's Responsive Web Design curriculum.</p>
-                    </a>
-                  </div>
-                  <div class="text-tile">
+                      <!-- tile 04 -->
+                      <div class="project-tile-400 tile-5">
+                        <img src="./img/product-landing.png" alt="" class="project-thumbnail">
+                      </div> 
+                      
+                    </div>
+                    <div class="column-content">
+                      <!-- tile 06  -->
+                      <!-- tile 06  -->    
+                        <div class="project-tile-300 tile-6">
+                          <a href="file:///Users/zoe/Documents/GitHub/zow.dk/snake-game.html">
+                            <img src="./img/snake-thumbnail.png" alt="" class="project-thumbnail">
+                            <div class="project-post-thumb">
+                              <h3>Snake clone</h3>
+                              <p>Solo Project | 1 week</p>
+                              <div class="icon-container">
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                              </div>
+                              <p>A single-player browser game where players control a snake-like avatar using the arrow keys. Objective: Collect as many points as they can without hitting the walls, or oneself!</p>
+                            </div>
+                          </a>
+                        </div>
+                  <div class="text-tile tile-4">
                     <h2>What I'm Looking For</h2>
-                    <p>I want to join a small to medium size company in the Copenhagen area.</p>
-                    <p>Looking for an environment which: </p>
+                    <p>I want to join a small to medium-sized company in the Copenhagen area.</p>
+                    <h3>Learning objectives:</h3>
                     <ul>
-                      <li>supports and promotes people from diverse backgrounds</li>
+                      <li>communicate regularly about my own and others' code</li>
+                      <li>contribute to a component library</li>
+                      <li>experience with different testing strategies </li>
+                      <li>deepen understanding of object-oriented programming and design priciples</li>
+                      <li>understand information architecture, interactive design and application usability</li>
+                    </ul>
+                    <h3>Looking for an environment which: </h3>
+                    <ul>
+                      <li>supports people from diverse backgrounds</li>
                       <li>helps people grow: connects juniors to mentors and resources needed to be successful </li>
                     </ul>
                   </div>
-                  <div class="project-tile">
-                    <img src="./img/product-landing.png" alt="">
+
+
+                  <!-- tile 08  -->  
+                    <div class="project-tile-400 tile-8">
+                      <a href="">
+                        <img src="./img/documentation-thumbnail.png" alt="" class="project-thumbnail">
+                        <div class="post-thumb">
+                          <h3>Js guide</h3>
+                          <p>Solo Project | 1 week</p>
+                          <div class="icon-container">
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                          </div>
+                          <p>A technical documentation page created for freeCodeCamp's Responsive Web Design challenge "Build a technical documentation page".</p>
+                        </div>
+                      </a>
+                    </div>
+
+
+                <!-- tile 09  -->  
+                  <div class="project-tile-200 featured tile-9">
+                    <a href="file:///Users/zoe/Documents/GitHub/zow.dk/pacman.html">
+                      <img src="./img/pacman-thumbnail.png" alt="" class="project-thumbnail">
+                      <div class="project-post-thumb">
+                        <h3>Pac-man clone</h3>
+                        <p>Solo Project | 1 week</p>
+                        <div class="icon-container">
+                          <i class="fa-brands fa-js"></i>
+                          <i class="fa-brands fa-html5"></i>
+                          <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <p>A single-player browser game where players navigate through a maze using the arrow keys. Objective: Eat all the dots while avoiding the four ghosts--Blinky, Pinky, Inky and Clyde.  </p>
+                      </div>
+                    </a>
                   </div> 
-              </div>
-              <!-- column 2 -->
-              <div class="column-content">
-                <div class="project-tile">
-                  <a href="file:///Users/zoe/Documents/GitHub/zow.dk/snake-game.html">
-                    <img src="./img/snake-thumbnail.png" alt="">
-                    <div class="project-post-thumb">
-                      <h3>Snake clone</h3>
-                      <p>Solo Project | 1 week</p>
-                      <div class="icon-container">
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
+
+                <!-- tile 10  -->  
+                  <div class="text-tile tile-10">
+                    <h2>Work History</h2>
+                    <p>In the past, I have held a range of customer-facing and operational roles within a manufacturing company. I enjoyed wearing many hats and teaming with others in sales, production and engineering to ship on-time and keep customers happy. </p></br>
+                    <p>Recently my focus has been learning the fundamentals of web + frontend development, while also attending language schools (<a href="#">UC Plus</a>, <a href="#">Københavns Sprog</a>) to become proficient in Danish. </p></br>
+                    <p>Here is a brief history of my recent employment. More details can be found on <a href="#"><strong>LinkedIn</strong></a>.</p></br>
+                    <div class="timeline">
+                      <div class="timeline-content left">
+                        <div class="text-wrapper">
+                          <h4>Jan 2017 - Mar 2020</h4>
+                          <p>Inventory Coordinator / New Business Development</p>
+                        </div>
+                        <div class="text-wrapper right">
+                          <div class="timeline-content">
+                            <h4>Mar 2013 - Dec 2016</h4>
+                            <p>Customer Service Specialist / Purchasing Agent</p>
+                          </div>
+                        </div>
+                        <div class="text-wrapper left">
+                          <div class="timeline-content">
+                            <h4>Jan 2013 - Dec 2014</h4>
+                            <p>Administrative Assistnat</p>
+                          </div>
+                        </div>
+                        <div class="text-wrapper right">
+                          <div class="timeline-content">
+                            <p><a href="#">view more...</a></p>
+                          </div>
+                        </div>
                       </div>
-                      <p>A single-player browser game where players control a snake-like avatar using the arrow keys. Objective: Collect as many points as they can without hitting the walls, or oneself!</p>
                     </div>
-                  </a>
-                </div>
-                <div class="text-tile">
-                  <h2>Things I'm Good At</h2>
-                  <p>Caramels jujubes sugar plum tootsie roll jelly pudding oat cake. Shortbread jelly beans bear claw jelly jelly-o candy shortbread. Fruitcake chocolate jelly beans oat cake cotton candy bear claw caramels. Liquorice jelly beans shortbread chocolate bar lollipop gingerbread apple pie. Sweet soufflé jujubes danish dragée</p>
-                  <ul>
-                    <li>Starting</li>
-                    <li>Cross-discipline collaboration</li>
-                    <li>Figuring it out</li>
-                    <li>Shipping?</li>
-                  </ul>
-                </div>
-                <div class="project-tile">
-                  <a href="file:///Users/zoe/Documents/GitHub/zow.dk/pacman.html">
-                    <img src="./img/pacman-thumbnail.png" alt="">
-                    <div class="project-post-thumb">
-                      <h3>Pac-man clone</h3>
-                      <p>Solo Project | 1 week</p>
-                      <div class="icon-container">
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+
+                <!-- tile 11  -->  
+                  <div class="project-tile-400 tile-11">
+                    <a href="https://zowdk.github.io/responsive-web-design/survey-form/">
+                      <img src="./img/form-thumbnail.png" alt="" class="project-thumbnail">
+                      <div class="project-post-thumb">
+                        <h3>Danish Learning Syrvey</h3>
+                        <p>Solo Project | 1 week</p>
+                        <div class="icon-container">
+                          <i class="fa-brands fa-js"></i>
+                          <p>A survey form created for freeCodeCamp's Responsive Web Design challenge "Build A Survey Form."</p>
                       </div>
-                      <p>A single-player browser game where players navigate through a maze using the arrow keys. Objective: Eat all the dots while avoiding the four ghosts--Blinky, Pinky, Inky and Clyde.  </p>
-                    </div>
-                  </a>
-                </div> 
-                <div class="text-tile">
-                  <h2>Job History</h2>
-                  <p>Caramels jujubes sugar plum tootsie roll jelly pudding oat cake. Shortbread jelly beans bear claw jelly jelly-o candy shortbread. Fruitcake chocolate jelly beans oat cake cotton candy bear claw caramels. Liquorice jelly beans shortbread chocolate bar lollipop gingerbread apple pie. Sweet soufflé jujubes danish dragée</p>
+                    </a>
+                  </div>  
                 </div>
-                <div class="project-tile">
-                  <a href="https://zowdk.github.io/responsive-web-design/survey-form/">
-                    <img src="./img/form-thumbnail.png" alt="">
-                    <div class="project-post-thumb">
-                      <h3>Danish Learning Syrvey</h3>
-                      <p>Solo Project | 1 week</p>
-                      <div class="icon-container">
-                        <i class="fa-brands fa-js"></i>
-                        <p>A survey form created for freeCodeCamp's Responsive Web Design challenge "Build A Survey Form."</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="text-tile">
+
+              <!-- tile 12  -->  
+                <div class="text-tile tile-12">
                   <h2>Think we can work together?</h2>
                   <p>Caramels jujubes sugar plum tootsie roll jelly pudding oat cake. Shortbread jelly beans bear claw jelly jelly-o candy shortbread. Fruitcake chocolate jelly beans oat cake cotton candy bear claw caramels. Liquorice jelly beans shortbread chocolate bar lollipop gingerbread apple pie. Sweet soufflé jujubes danish dragée</p>
                 </div>
-            </div>
-          </div>
-      </section>
-      <footer>
 
+                </div>  
+                  
+            
+              </div>  
+        </section>
+
+      </div>
+      <footer>
+        <div class="signature">
+          <p>designed and<span> < / > </span> by <a href="#">@zowdk</a></p>
+        </div>
       </footer>
   </body>
 </html>
