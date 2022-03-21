@@ -28,7 +28,6 @@ img,
   border-radius: 10px;
 }
 .img-div {
-  border: 2px solid goldenrod;
   margin: 0 auto;
 }
 .placeholder-img {
@@ -121,7 +120,6 @@ strong {
 /* layout */
 .container {
   margin: 0 auto;
-  border: 2px solid orange;
 }
 .container-flex {
   display: flex;
