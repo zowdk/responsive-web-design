@@ -303,5 +303,21 @@ footer {
   padding: 0.5em 0;
   padding-right: 2em;
   background-color: #ffb563;
-  text-align: right;
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
+  padding-left: 2em;
+}
+.social-link {
+  padding-right: 2em;
+}
+.social-link:hover,
+.social-link:focus {
+  color: #468189;
 }
