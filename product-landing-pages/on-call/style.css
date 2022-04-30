@@ -210,7 +210,7 @@ section {
     margin: 0 auto;
   }
   .container-hero {
-    width: 60%;
+    width: 80%;
     text-align: left;
     align-self: flex-start;
     margin-left: 3em;
@@ -224,6 +224,7 @@ section {
   .container-btn {
     display: flex;
     flex-direction: row;
+    width: 90%;
   }
 }
 /* section why this app */
